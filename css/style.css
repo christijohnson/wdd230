@@ -6,7 +6,7 @@
 
 body {
     font-size: 16px;
-    font-family:cursive;
+    font-family: 'Sriracha', cursive;
 }
 
 header, main, footer {
@@ -54,5 +54,5 @@ ul {
 }
 
 p {
-    color: rgb(139, 22, 110);
+    color: rgb(103, 43, 201);
 }
