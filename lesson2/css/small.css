@@ -18,9 +18,8 @@ header, main, footer {
 
 header {
     margin: 1rem auto;
-    border: 1px solid rgb(24, 141, 116);
     padding: .5rem;
-    background-color: rgba(150, 163, 170, 0.658);
+    background-color: rgba(24, 160, 233, 0.658);
     text-align: center;
 }
 
@@ -37,20 +36,14 @@ h1 {
 h2 {
     font-size: 1rem;
     padding-left: .25rem;
-    border-bottom: solid rgb(103, 43, 201);
 }
 
 footer {
     margin: 3rem auto;
-    border: 1px solid rgb(24, 141, 116);
     padding: .5rem;
-    background-color: rgba(150, 163, 170, 0.658);
+    background-color: rgba(24, 160, 233, 0.658);
     display: grid;
     grid-template-rows: 1fr;
     text-align: center;
 }
 
-ul {
-    padding: 1.5rem 3rem;
-    border-bottom: solid rgb(103, 43, 201);
-}
