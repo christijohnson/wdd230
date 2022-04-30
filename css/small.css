@@ -6,7 +6,9 @@
 
 body {
     font-size: 16px;
+    line-height: 1.5;
     font-family: 'Sriracha', cursive;
+    height: 100%;
 }
 
 header, main, footer {
@@ -16,34 +18,33 @@ header, main, footer {
 
 header {
     margin: 1rem auto;
-    border: 5px solid rgb(24, 141, 116);
-    border-radius: 8px;
+    border: 1px solid rgb(24, 141, 116);
     padding: .5rem;
-    background-color: rgba(129, 139, 145, 0.658);
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
-    justify-items: center;
+    background-color: rgba(150, 163, 170, 0.658);
+    text-align: center;
 }
 
-/*h1 {
-    padding-left: 4.5rem;
-}*/
+header img {
+    width: 191px;
+    height: 124px;
+}
 
-header picture {
-    width: 100%;
+h1 {
+    font-size: 1.5rem;
+    margin: 0.15rem;
 }
 
 h2 {
+    font-size: 1rem;
+    padding-left: .25rem;
     border-bottom: solid rgb(103, 43, 201);
 }
 
 footer {
     margin: 3rem auto;
-    border: 5px solid rgb(24, 141, 116);
-    border-radius: 8px;
+    border: 1px solid rgb(24, 141, 116);
     padding: .5rem;
-    background-color: rgba(129, 139, 145, 0.658);
+    background-color: rgba(150, 163, 170, 0.658);
     display: grid;
     grid-template-rows: 1fr;
     text-align: center;
@@ -52,8 +53,4 @@ footer {
 ul {
     padding: 1.5rem 3rem;
     border-bottom: solid rgb(103, 43, 201);
-}
-
-p {
-    color: rgb(103, 43, 201);
 }
