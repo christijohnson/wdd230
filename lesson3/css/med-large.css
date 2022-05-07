@@ -15,5 +15,10 @@
     p, nav {
         font-size: 1.2rem;
     }
+
+    .personas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
 }
