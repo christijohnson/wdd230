@@ -82,7 +82,7 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.5);
 }
 nav ul li a:hover {
-    background-color: rgba(240,229,216,0.3);
+    background-color: rgba(240,229,216,0.93);
     color: rgb(3,150,190);
 }
 
@@ -108,6 +108,10 @@ footer {
 }
 
 footer div a:link {
+    color: black;
+}
+
+footer div a:visited {
     color: black;
 }
 
