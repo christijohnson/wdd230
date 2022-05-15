@@ -1,0 +1,44 @@
+@media only screen and (min-width: 37rem) {
+
+    .logo {
+        height: 75px;
+        padding: .5rem;
+    }
+
+    .social {
+        display: inline-flex;
+        position: absolute;
+        top: 0;
+        right: 7em;
+    }
+    
+    .footerTop {
+        justify-content: center;
+        display: flex;
+    }
+
+    #footerSite {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #footerContact {
+        justify-content: right;
+        padding-left: 5rem;
+    }
+
+    .footerBottom {
+        display: flex;
+    }
+
+    .footerBottom li {
+        display: block;
+        flex: 1 1 auto;
+        text-align: center;
+        
+    }
+}

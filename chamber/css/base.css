@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240,229,216);
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'DM Serif Display', serif;
+    font-size: 14px;
+}
+
+header {
+    background-color: rgb(3,150,190);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: .5rem;
+}
+
+.sitename {
+    grid-column: 1/1;
+    display: flex;
+}
+
+.social {
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+#hamBtn {
+    grid-column: 3/3;
+    display: flex;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#primNav {
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.datetracker {
+    grid-column: 1/4;
+    border-style: groove;
+    background-color: rgb(140, 181, 192);
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    padding: .5rem;
+}
+
+h1 {
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+nav ul li a:hover {
+    background-color: rgba(240,229,216,0.3);
+    color: rgb(3,150,190);
+}
+
+nav ul li.active a {
+    /*background-color: rgba(0,0,0,0.2); */
+    font-style: italic;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamBtn span:nth-child(1) {display: block;}
+#hamBtn span:nth-child(2) {display: none;}
+
+#hamBtn.open span:nth-child(1) {display: none;}
+#hamBtn.open span:nth-child(2) {display: block;}
+
+footer {
+    background-color: rgb(3,150,190);
+    display: grid;
+    padding: .5rem;
+    text-align: center;
+}
+
+footer div a:link {
+    color: black;
+}
+
+footer p {
+    padding: 0rem;
+}
+
+.placeholder-box {
+    border: 1px solid black;
+}
+
+.hero {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.event {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.weather {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.news {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.spotlight {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.spotlight1 {
+    margin: .5em;
+    border: 0.5px solid black;
+}
+
+.spotlight2 {
+    margin: .5em;
+    border: 0.5px solid black;
+}
+.spotlight3 {
+    margin: .5em;
+    border: 0.5px solid black;
+}
+
+.join {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
