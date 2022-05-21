@@ -18,11 +18,4 @@
         height: 110px;
         padding: .5rem;
     }
-
-    .social {
-        display: inline-flex;
-        position: absolute;
-        top: 0;
-        right: 7em;
-    }
 }

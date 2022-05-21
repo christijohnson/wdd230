@@ -5,12 +5,11 @@
         padding: .5rem;
     }
 
-    .social {
-        display: inline-flex;
-        position: absolute;
-        top: 0;
-        right: 7em;
-    }
+    #primNav {
+        width: cancel;
+        position: relative;
+        background-color: rgb(3,150,190);
+    }    
     
     .footerTop {
         justify-content: center;

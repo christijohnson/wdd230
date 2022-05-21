@@ -12,28 +12,38 @@ body {
     font-size: 14px;
 }
 
+#inviteBanner {
+    font-size: 20px;
+    padding: .75rem;
+    text-align: center;
+}
+
 header {
     background-color: rgb(3,150,190);
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     padding: .5rem;
 }
 
 .sitename {
-    grid-column: 1/1;
     display: flex;
 }
 
 .social {
-    grid-column: 2/2;
-    display: flex;
-    justify-content: center;
-    margin-left: 0px;
+   display: flex;
+}
+
+.datetracker {
+    padding: .25rem;
 }
 
 #hamBtn {
-    grid-column: 3/3;
-    display: flex;
+    background: transparent;
+    border: none;
+}
+
+#hamBtn span {
+    font-size: 35px;
 }
 
 nav button {
@@ -48,8 +58,9 @@ nav button {
 }
 
 #primNav {
-    grid-column: 1/4;
-    grid-row: 3;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(3,150,190);
 }
 
 .datetracker {
@@ -103,8 +114,12 @@ nav ul.open {display: block;}
 footer {
     background-color: rgb(3,150,190);
     display: grid;
-    padding: .5rem;
+    padding: 1rem;
     text-align: center;
+}
+
+.footerBottom {
+    padding-top: .5rem;
 }
 
 footer div a:link {
