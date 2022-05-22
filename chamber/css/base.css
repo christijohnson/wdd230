@@ -34,6 +34,10 @@ header {
    color: rgb(3,150,190);
 }
 
+.social a img {
+    margin: 3px;
+}
+
 .social a:hover {
     color: rgb(3,150,190);
 }

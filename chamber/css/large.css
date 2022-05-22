@@ -4,7 +4,6 @@
 
     nav ul#primNav {
         display: flex;
-        margin-left: 2vw;
         border-left: 1px solid rgba(0,0,0,0.3);
     }
 
@@ -12,7 +11,7 @@
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .5rem 1rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .logo {
