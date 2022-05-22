@@ -31,6 +31,19 @@ header {
 
 .social {
    display: flex;
+   color: rgb(3,150,190);
+}
+
+.social a:hover {
+    color: rgb(3,150,190);
+}
+
+.social a:active {
+    color: rgb(3,150,190);
+}
+
+.social a:visited {
+    color: rgb(3,150,190);
 }
 
 .datetracker {
@@ -78,6 +91,10 @@ nav button {
 h1 {
     padding: .5rem;
     font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
 }
 
 nav ul {
