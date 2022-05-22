@@ -134,54 +134,65 @@ footer p {
     padding: 0rem;
 }
 
-.placeholder-box {
-    border: 1px solid black;
-}
-
 .hero {
     margin: 20px;
     padding: 10px;
     background-color: white;
+    border: 1px solid black;
 }
 
 .event {
     margin: 20px;
     padding: 10px;
     background-color: white;
+    border: 1px solid black;
 }
 .weather {
     margin: 20px;
     padding: 10px;
     background-color: white;
+    border: 1px solid black;
 }
 .news {
     margin: 20px;
     padding: 10px;
     background-color: white;
+    border: 1px solid black;
 }
 
 .spotlight {
     margin: 20px;
     padding: 10px;
     background-color: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-.spotlight1 {
+.spot1 {
+    position: relative;
+    grid-row: 1/2;
     margin: .5em;
     border: 0.5px solid black;
 }
 
-.spotlight2 {
+.spot2 {
+    position: relative;
+    grid-row: 2/2;
     margin: .5em;
     border: 0.5px solid black;
 }
-.spotlight3 {
+.spot3 {
+    display: none;
+    position: relative;
     margin: .5em;
     border: 0.5px solid black;
 }
 
 .join {
+    display: none;
     margin: 20px;
     padding: 10px;
     background-color: white;
+    border: 1px solid black;
 }
