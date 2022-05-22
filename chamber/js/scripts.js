@@ -23,7 +23,6 @@ document.querySelector('#currentyear').textContent = currentdate.getFullYear();
   // add a 'listener' to wait for a submission of our form. When that happens run the code below.
   if (weekday == 'Monday' || weekday == 'Tuesday') {
     document.getElementById("inviteBanner").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-    console.log (weekday);
   //formElement.addEventListener('submit', function(e) {
     //stop the form from doing the default action
     //e.preventDefault();
