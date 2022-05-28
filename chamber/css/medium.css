@@ -1,5 +1,13 @@
 @media only screen and (min-width: 37rem) {
 
+    /*- overall page -*/
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    /* - header - */
     .logo {
         height: 75px;
         padding: .5rem;
@@ -8,22 +16,9 @@
     #primNav {
         position: relative;
         background-color: rgb(3,150,190);
-    }    
+    }  
     
-    .footerTop {
-        justify-content: center;
-        display: flex;
-    }
-
-    #footerSite {
-        text-align: left;
-        padding-left: 1rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
+    /*- main - */
     main {
         display: grid;
         grid-template-columns: 50% 20% 30%;
@@ -49,6 +44,27 @@
         display: block;
         grid-row: 4/5;
         grid-column: 1/4;
+        text-align: center;
+    }
+
+    .join h2 {
+        display: none;
+    }
+
+    .join-button {
+        background-color: rgb(44, 182, 140);
+        border: none;
+        border-radius: 12px;
+        padding: 7px 52px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        justify-content: center;
+        top: 10%;
+        left: 50%;
+        color: black;
+        /*-ms-transform: translate(-50%, -50%);*/
+        /*transform: translate(-50%, -50%);*/
     }
 
     .event {
@@ -59,6 +75,17 @@
     .weather {
         grid-row: 5/6;
         grid-column: 3/4;
+    }
+    
+    /* - footer - */
+    .footerTop {
+        justify-content: center;
+        display: flex;
+    }
+
+    #footerSite {
+        text-align: left;
+        padding-left: 1rem;
     }
 
     #footerContact {

@@ -1,3 +1,4 @@
+/* - overall page - */
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +13,24 @@ body {
     font-size: 14px;
 }
 
-#inviteBanner {
-    font-size: 20px;
-    padding: .75rem;
+h1 {
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+h2 {
     text-align: center;
+}
+
+/* - header - */
+#inviteBanner {
+    font-size: 30px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
 }
 
 header {
@@ -36,22 +51,6 @@ header {
 
 .social a img {
     margin: 3px;
-}
-
-.social a:hover {
-    color: rgb(3,150,190);
-}
-
-.social a:active {
-    color: rgb(3,150,190);
-}
-
-.social a:visited {
-    color: rgb(3,150,190);
-}
-
-.datetracker {
-    padding: .25rem;
 }
 
 #hamBtn {
@@ -80,25 +79,23 @@ nav button {
     background-color: rgb(3,150,190);
 }
 
+#activenav{
+    background-color: rgba(240,229,216,0.93);
+    color: rgb(3,150,190);
+}
+
 .datetracker {
     grid-column: 1/4;
     border-style: groove;
     background-color: rgb(140, 181, 192);
     text-align: center;
+    padding: .25rem;
+    font-size: 1.25rem;
 }
 
 .logo {
     height: 50px;
     padding: .5rem;
-}
-
-h1 {
-    padding: .5rem;
-    font-size: 1.5rem;
-}
-
-h2 {
-    text-align: center;
 }
 
 nav ul {
@@ -118,9 +115,8 @@ nav ul li a:hover {
     color: rgb(3,150,190);
 }
 
-nav ul li.active a {
-    /*background-color: rgba(0,0,0,0.2); */
-    font-style: italic;
+nav ul li a:active {
+    background-color: rgba(240,229,216);
 }
 
 nav ul {display: none;}
@@ -132,6 +128,110 @@ nav ul.open {display: block;}
 #hamBtn.open span:nth-child(1) {display: none;}
 #hamBtn.open span:nth-child(2) {display: block;}
 
+/* - main - */
+.section img {
+    width: 100%;
+    align-items: center;
+}
+
+.hero {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(118, 0, 164,0.5);
+    border: 1px solid black;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero-button {
+    background-color: rgb(44, 182, 140);
+    border: none;
+    border-radius: 12px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 45px;
+    color: black;
+}
+
+p {
+    padding: 5px;
+}
+
+.event {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(118, 0, 164,0.5);
+    border: 1px solid black;
+    text-align: center;
+}
+.weather {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(118, 0, 164,0.5);
+    border: 1px solid black;
+}
+.news {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(118, 0, 164,0.5);
+    border: 1px solid black;
+}
+
+.spotlight {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(118, 0, 164,0.5);
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.spotlight h2 {
+    visibility: hidden;
+}
+
+.spot1 {
+    position: relative;
+    grid-row: 1/2;
+    margin: .5em;
+    border: 2.5px solid black;
+}
+
+.spot2 {
+    position: relative;
+    grid-row: 2/2;
+    margin: .5em;
+    border: 2.5px solid black;
+}
+.spot3 {
+    display: none;
+    position: relative;
+    margin: .5em;
+    border: 2.5px solid black;
+}
+
+.join {
+    display: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(118, 0, 164,0.5);
+    border: 1px solid #000000;
+}
+
+/* - footer - */
 footer {
     background-color: rgb(3,150,190);
     display: grid;
@@ -141,6 +241,10 @@ footer {
 
 .footerBottom {
     padding-top: .5rem;
+}
+
+ul.footerBottom {
+    list-style: none;
 }
 
 footer div a:link {
@@ -153,71 +257,4 @@ footer div a:visited {
 
 footer p {
     padding: 0rem;
-}
-
-.section img {
-    width: 100%;
-}
-
-.hero {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.event {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-}
-.weather {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-}
-.news {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.spotlight {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.spot1 {
-    position: relative;
-    grid-row: 1/2;
-    margin: .5em;
-    border: 0.5px solid black;
-}
-
-.spot2 {
-    position: relative;
-    grid-row: 2/2;
-    margin: .5em;
-    border: 0.5px solid black;
-}
-.spot3 {
-    display: none;
-    position: relative;
-    margin: .5em;
-    border: 0.5px solid black;
-}
-
-.join {
-    display: none;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div id="inviteBanner"></div> 
+    <div id="inviteBanner" class="hide"></div> 
     <header>
         <div class="sitename">
             <picture>
@@ -23,7 +23,7 @@
             </div> 
             <nav>
                 <ul id="primNav">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a id="activenav" href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
@@ -45,29 +45,45 @@
     <main>
         <div class="section hero">
             <h2>Ashbury Court Chamber of Commerce</h2>
-            <img src="http://placeimg.com/320/240/arch" alt="Ashbury Court Chamber of Commerce picture"></div>
+            <picture class="hero-pic">
+                <source srcset="images/wdd230-org_small.webp" media="(max-width: 591px)">
+                <source srcset="images/wdd230-org_medium.webp" media="(max-width: 863px)">
+                <source srcset="images/wdd230-org_large.webp" media="(max-width: 2100px)">
+                <img src="images/wdd230-org.jpg" alt="Ashbury Court Chamber of Commerce picture">                
+                </picture>
+                
+        <a href="join.html" class="hero-button">Join the Chamber</a></div>
         <div class="section event">
-            <h2>Event</h2>
-            <img src="http://placeimg.com/320/240/tech" alt="event"></div>
+            <h2>Upcoming Event</h2>
+            <img src="images/Bluebird.webp" alt="event">
+            <p>Chocolate Making Demonstration</p>
+            <p>Want to learn how to dip delicious chocolates?  Join us for our demonstrations on Wednesdays at 2:00 p.m.<hr>75 West Center Street<br>or call us<br>(435) 753-3670</p></div>
         <div class="section weather">
             <h2>Weather</h2>
-            <img src="http://placeimg.com/320/240/nature" alt="weather"></div>
+            <img src="images/Raining_Sun-128.webp" alt="weather">
+            <p>45 &#8457</p>
+        <h3>Chance of Rain</h3><hr><p>Wind Speed:  5.5mph<br>Wind Chill:  N/A</p></div>
         <div class="section news">
             <h2>News Release</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora aliquam quod, ratione illo veritatis, explicabo placeat facere dolor iusto, vel quisquam asperiores nesciunt molestias laboriosam iste voluptate cupiditate dolorem.</div>
         <div class="section join">
             <h2>Join</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ipsum. Officiis rerum, maiores quos consequatur aliquid veritatis possimus delectus similique dolorem recusandae! Necessitatibus minus ratione mollitia vitae earum nemo nobis?</div>
+            <a href="join.html" class="join-button">Learn more</a>
+            <p>Discover how to join the chamber of commerce and learn how it will benefit your organization!</p>
+                </div>
         <section class="section spotlight">
             <div class="spot1">
                 <h2>Spotlight 1</h2>
-                <img src="http://placeimg.com/320/240/any/sepia" alt="spot1"></div>
+                <img src="images/AnniversaryInn.webp" alt="spot1">
+            <h3>Come and stay with us!</h3><p>Take a virtual tour to check out our rooms and prices</p><hr><p>169 East Center Street<br>(435) 752-3443</p></div>
             <div class="spot2">
                 <h2>Spotlight 2</h2>
-                <img src="http://placeimg.com/320/240/any/grayscale" alt="spot2"></div>
+                <img src="images/Utah_State_University_seal.svg.webp" alt="spot2">
+            <h3>Follow the Aggies - USU Athletics calendar</h3><hr><p>Old Main Hill<br>(435) 797-1000</p></div>
             <div class="spot3">
                 <h2>Spotlight 3</h2>
-                <img src="http://placeimg.com/320/240/any" alt="spot3"></div>
+                <img src="images/ThatcherMansion.webp" alt="spot3">
+            <h3>Art and Music classes for everyone at the Thatcher-Young Mansion</h3><hr>35 West 100 South<br>(435) 752-0026</p></div>
         </section>
     </main>
     <footer>

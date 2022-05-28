@@ -1,5 +1,11 @@
 @media only screen and (min-width: 54rem) {
 
+    /* - overall page - */
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* - header - */
     #hamBtn {display: none;}
 
     nav ul#primNav {
@@ -19,6 +25,7 @@
         padding: .5rem;
     }
 
+    /* - main - */
     main {
         display: grid;
         grid-template-columns: 25% 50% 25%;
@@ -59,4 +66,8 @@
         grid-row: 2/3;   
     }
 
+    /* - footer - */
+    .footerTop {
+        padding-bottom: 1rem;
+    }
 }
