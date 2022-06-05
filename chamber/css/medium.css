@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37rem) {
+@media only screen and (min-width: 600px) {
 
     /*- overall page -*/
     h1 {
@@ -71,8 +71,6 @@
         top: 10%;
         left: 50%;
         color: black;
-        /*-ms-transform: translate(-50%, -50%);*/
-        /*transform: translate(-50%, -50%);*/
     }
 
     .event {
@@ -120,5 +118,37 @@
         flex: 1 1 auto;
         text-align: center;
         
+    }
+
+    /* - discover page - */
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .demographs {
+        display: block;
+        grid-gap: 5px;
+        padding: 5px;
+    }
+
+    .gallery {
+        padding: 5px;
+    }
+
+    .heading {
+        top: 25px;
+    }
+
+    .gallery {
+        grid-template-columns: 1/2;
+    }
+
+    .demographs {
+        grid-template-columns: 2/3;
+    }
+
+    .storage {
+        grid-template-columns: 1/3;
     }
 }

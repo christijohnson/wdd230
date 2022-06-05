@@ -135,8 +135,11 @@ nav ul.open {display: block;}
 #hamBtn.open span:nth-child(2) {display: block;}
 
 /* - main - */
+img {
+    max-width: 100%;
+}
+
 .section img {
-    width: 100%;
     align-items: center;
 }
 
@@ -191,6 +194,10 @@ p {
     grid-template-columns: 1fr 1fr;
 }
 
+#display-weather img {
+    width: 50%;
+}
+
 #temperature {
     font-size: 2.75rem;
 }
@@ -241,7 +248,7 @@ p {
     display: none;
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118, 0, 164,0.5);
+    background-color: rgba(118,0,164,0.5);
     border: 1px solid #000000;
 }
 
@@ -275,4 +282,59 @@ footer div a:visited {
 
 footer p {
     padding: 0rem;
+}
+
+/* - discover - */
+
+.photo-gal {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-gal {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+.demos {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+}
+
+.dems {
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgba(118,0,164,0.5);
+    padding: 5px;
+}
+
+.dems p {
+    text-align: center;
+}
+
+.gallery {
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    background-color: white;
+    opacity: 70%;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.storage p {
+    border: 1px solid black;
+    background-color: white;
+    margin: 5px;
+}
+
+.gallery img:hover {
+    box-shadow: 20px 20px 40px rgb(138, 89, 134);
 }
