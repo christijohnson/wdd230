@@ -75,28 +75,35 @@
 
     .event {
         grid-row: 5/6;
-        grid-column: 1/3;
+        grid-column: 1/2;
     }
 
     .weather {
         grid-row: 5/6;
-        grid-column: 3/4;
-    }
-
-    #display-weather {
-        display: block;
-        padding-top: 3em;
-        padding-bottom: 4em;
+        grid-column: 2/4;
     }
 
     #temperature {
         font-size: 1.75rem;
     }
+
+    #display-weather {
+        padding: 10px;
+    }
+
+    #display-weather img {
+        width: 90%;
+        padding: 10px 0 15px 0;
+    }
+
+    .weather p {
+        font-size: 1.5rem;
+    }
     
     /* - footer - */
     .footerTop {
-        justify-content: center;
         display: flex;
+        justify-content: space-evenly;
     }
 
     #footerSite {
