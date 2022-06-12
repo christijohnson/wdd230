@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashbury Court Chamber of Commerce 435-755-9876</title>
-    <meta name="description" content="Ashbury Court Chamber of Commerce is an online business directory for our growing community.">
+    <title>Application to join Ashbury Court Chamber of Commerce 435-755-9876</title>
+    <meta name="description" content="Apply and join the Ashbury Court Chamber of Commerce and your business can be a part of our growing community.">
     <link rel="shortcut icon" href="chamberFavicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,8 +42,77 @@
         
     </header>
     <div class="datetracker"><span id="currentDate"></span></div>
-    <main>
-        
+    <main class="trial">
+        <div class="join-layout">
+        <div id="join-title">
+        <h1>Ashbury Court Chamber of Commerce Application</h1></div>
+            <div id="join-apply">
+            <form method="get" action="thankyou.html">
+            <div>
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input  type="text" name="lname" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="youremail@domain.com" required></label>
+                    <label class="top">Cell phone number*<input type="tel" name="phone" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business Name*<input type="text" name="bname" title="Business Name" required></label>
+                    <label class="top">Position Title<input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                    <label class="top" for="content">Business Descripton
+                        <textarea name="textarea" id="content"></textarea></label>
+                    <input type="hidden" id="date" name="date" value="currentDate">
+                    <input type="hidden" id="time" name="time" value="currentTime">
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Levels</legend>
+                    <label class="sbs"><input type="radio" name="membership" required>Non-Profit Member</label>
+                    <label class="sbs"><input type="radio" name="membership">Bronze Member</label>
+                    <label class="sbs"><input type="radio" name="membership">Silver Member</label>
+                    <label class="sbs"><input type="radio" name="membership">Gold Member</label>
+                </fieldset>
+                <input type="submit" value="Join our Chamber" name="button" class="submitBtn">
+            </div>
+            </form>
+        </div>
+            <div id="member-levels">
+                    <div id="level-title"><h2>Membership Benefits</h2></div><hr>
+                    <div class="member-info">
+                        <div class="info-box">
+                            <div><h3>Non-Profit Membership</h3>
+                                <h4>Free of charge</h4>
+                            <ul><li>For non-profit organizations</li>
+                            <li>Monthly news update</li></ul></div>
+                        </div>
+                    </div><hr>
+                    <div class="member-info">
+                        <div class="info-box"><h3>Bronze Membership</h3>
+                            <h4>Annual fee of $350</h4>
+                        <ul><p>All the benefits of the Non-Profit Membership in addition to:</p>
+                        <li>Business counseling</li>
+                        <li>Monthly meeting invites for events and community happenings</li></ul></div>   
+                    </div><hr>
+                    <div class="member-info">
+                        <div class="info-box"><h3>Silver Membership</h3>
+                            <h4>Annual fee of $500</h4>
+                        <ul><p>All the benefits of Bronze Membership in addition to:</p>
+                        <li>Business digital assistance</li>
+                        <li>Listed in the Chamber Marketing catalog</li>
+                        <li>Monthly networking lunches</li></ul></div>   
+                    </div><hr>  
+                    <div class="member-info">
+                        <div class="info-box"><h3>Gold Membership</h3>
+                            <h4>Annual fee of $650</h4>
+                        <ul><p>All the benefits of Silver Membership in addition to:</p>
+                            <li>Business spotlights on the chamber site</li>
+                            <li>Monthly lunch and learn</li>
+                            <li>Free app directory</li>
+                            <li>Quarterly business summit invites</li></ul></div>   
+                    </div>  
+            </div>
+        </div>
+            
     </main>
     <footer>
         <section class="footerTop">
@@ -67,6 +136,5 @@
         </ul>  
     </footer>
     <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
 </body>
 </html>
