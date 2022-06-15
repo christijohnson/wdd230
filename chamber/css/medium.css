@@ -8,14 +8,9 @@
         font-size: 1.75rem;
     }
     /* - header - */
-    .logo {
-        height: 75px;
-        padding: .5rem;
-    }
 
     #primNav {
         position: relative;
-        background-color: rgb(3,150,190);
     }  
     
     /*- main - */

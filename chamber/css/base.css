@@ -40,7 +40,7 @@ h3 {
 }
 
 header {
-    background-color: rgb(3,150,190);
+    background-color: #04c2f6;
     display: flex;
     justify-content: space-between;
     padding: .5rem;
@@ -51,17 +51,20 @@ header {
 }
 
 .social {
-   display: flex;
-   color: rgb(3,150,190);
+    text-decoration: none;
+    display: flex;
+    color: rgb(3,150,190);
 }
 
 .social a img {
-    margin: 3px;
+    margin: 10px;
+    width: 48px;
 }
 
 #hamBtn {
     background: transparent;
     border: none;
+    min-width: 50px;
 }
 
 #hamBtn span {
@@ -81,26 +84,31 @@ nav button {
 
 #primNav {
     width: 100%;
-    position: absolute;
-    background-color: rgb(3,150,190);
+    right: 0;
+    background-color: #04c2f6;
+}
+
+
+.center ul {
+    content: center;
 }
 
 #activenav{
     background-color: rgba(240,229,216,0.93);
-    color: rgb(3,150,190);
+    color: #013341;
 }
 
 .datetracker {
     grid-column: 1/4;
     border-style: groove;
-    background-color: rgb(140, 181, 192);
+    background-color: #2cb68c;
     text-align: center;
     padding: .25rem;
     font-size: 1.25rem;
 }
 
 .logo {
-    height: 50px;
+    width: 80px;
     padding: .5rem;
 }
 
@@ -146,7 +154,7 @@ img {
 .hero {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118, 0, 164,0.5);
+    background-color: #d0a9d6;
     border: 1px solid black;
     position: relative;
 }
@@ -173,20 +181,21 @@ p {
 .event {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118, 0, 164,0.5);
+    background-color: #d0a9d6;
     border: 1px solid black;
     text-align: center;
 }
 
 .event img {
     padding: 1.2rem;
+    width: 100%;
     max-width: 300px;
 }
 
 .weather {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118, 0, 164,0.5);
+    background-color: #d0a9d6;
     border: 1px solid black;
 }
 
@@ -213,14 +222,14 @@ p {
 .news {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118, 0, 164,0.5);
+    background-color: #d0a9d6;
     border: 1px solid black;
 }
 
 .spotlight {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118, 0, 164,0.5);
+    background-color: #d0a9d6;
     border: 1px solid black;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -256,7 +265,7 @@ p {
     display: none;
     margin: 20px;
     padding: 10px;
-    background-color: rgba(118,0,164,0.5);
+    background-color: #d0a9d6;
     border: 1px solid #000000;
 }
 
@@ -266,7 +275,7 @@ p {
 
 /* - footer - */
 footer {
-    background-color: rgb(3,150,190);
+    background-color: #04c2f6;
     display: grid;
     padding: 1rem;
     text-align: center;
@@ -319,7 +328,7 @@ footer p {
 .dems {
     margin: 10px;
     border: 1px solid black;
-    background-color: rgba(118,0,164,0.5);
+    background-color: #d0a9d6;
     padding: 5px;
 }
 
@@ -348,7 +357,7 @@ footer p {
 }
 
 .gallery img:hover {
-    box-shadow: 20px 20px 40px rgb(138, 89, 134);
+    box-shadow: 20px 20px 40px #8a5986;
 }
 
 /*- join page -*/
@@ -412,7 +421,7 @@ form section {
 
 .submitBtn {
     border-radius: 1rem;
-    background-color: rgb(138,89,134);
+    background-color: #8a5986;
     color: white;
     padding: .75rem .5rem;
     margin: 0 0 2rem 2%;
