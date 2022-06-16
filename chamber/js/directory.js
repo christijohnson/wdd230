@@ -6,36 +6,34 @@ fetch(requestURL)
         return response.json();
     })
     .then(function(jsonObject) {
-        const directory = jsonObject["directory"];
+        const prophets = jsonObject["businesses"];
         console.table(jsonObject);  // temporary checking 
-        directory.forEach(displayDirectory);
+        prophets.forEach(displayProphets);
     });
 
-function displayDirectory(company) {
+function displayProphets(prophet) {
     // create elements to add to the document
     let card = document.createElement("section");
     let h2 = document.createElement("h2");
-    let image = document.createElement("img");
-    let address = document.createElement("p");
-    let phone = document.createElement("p");
-
-    let order = ``;
+    let portrait = document.createElement("img");
+    //let birthdate = document.createElement("p");
+    //let birthplace = document.createElement("p");
 
     // change textContent property of h2 element to contain prophet's full name
-    h2.textContent = `${company.name}`;
-    address.textContent = `address:  ${company.birthdate}`;
-    phone.textContent = `phone:  ${company.birthplace}`;
+    h2.textContent = `${businesses.name}`;
+    //birthdate.textContent = `Birthdate:  ${businesses.address}`;
+    //birthplace.textContent = `Birthplace:  ${businesses.phone}`;
 
     // build image attributes using setAttribute method for src, alt, loading attribute value
-    image.setAttribute("src", company.imageurl);
-    image.setAttribute("alt", `Portrait of ${company.name} Latter-day President`);
-    image.setAttribute("loading", "lazy");
+    portrait.setAttribute("src", businesses.imageurl);
+    portrait.setAttribute("alt", `Portrait of ${businesses.name} Latter-day President`);
+    portrait.setAttribute("loading", "lazy");
 
     // add/append section/card with h2 element
     card.appendChild(h2);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(image);
+    //card.appendChild(birthdate);
+    //card.appendChild(birthplace);
+    card.appendChild(portrait);
 
     // add/append existing HTML div with cards class with section/card
     // document.querySelector("div.cards").appendChild(card);
