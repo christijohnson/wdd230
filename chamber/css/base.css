@@ -90,7 +90,7 @@ nav button {
 
 
 .center ul {
-    content: center;
+    justify-content: center;
 }
 
 #activenav{
