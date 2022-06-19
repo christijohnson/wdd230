@@ -484,3 +484,59 @@ form textarea {
     grid-column: 1/-1;
     align-items: center;
 }
+
+/* - directory = */
+
+#directory {
+    padding: 10px;
+}
+
+#toggle {
+    margin: 0.25em;
+    padding: 1rem;
+    text-align: center;
+    background-color: #d0a9d6;
+}
+
+#gridBtn, #listBtn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    box-shadow: 3px 3px 10px #eee;
+}
+
+.dirselect {
+    background-color: #04c2f6;
+}
+
+.gridview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cards section {
+    margin: 0.25rem;
+    padding: 0.25rem;
+    background-color: white;
+    border: 1px solid #bbb;
+    box-shadow: 3px 3px 10px #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards p {
+    padding: 2px;
+}
+
+.listview {
+    display: grid;
+    text-align: center;
+}
+
+.listview img {
+    display: none;
+}
+
+.listview h3 {
+    font-size: 1rem;
+}

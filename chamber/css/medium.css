@@ -155,7 +155,7 @@
         width: 30%;
     }
     
-    .trial {
+    .grid-change {
         grid-template-columns: none
     }
 
@@ -190,4 +190,10 @@
         padding-top: 20px;
     }
 
+    /* - directory = */
+    .listview section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-around;
+    }
 }

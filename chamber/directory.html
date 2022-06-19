@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashbury Court Chamber of Commerce 435-755-9876</title>
-    <meta name="description" content="Ashbury Court Chamber of Commerce is an online business directory for our growing community.">
+    <title>Business Directory for the Ashbury Court Chamber of Commerce</title>
+    <meta name="description" content="A business listing of members of the Ashbury Court Chamber of Commerce.">
     <link rel="shortcut icon" href="chamberFavicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <header>
         <div class="sitename">
             <picture>
-                <img class="logo" src="images/accoc_logo.webp" width="50px" alt="Logo for Ashbury Court Chamber of Commerce"></picture>
+                <img class="logo" src="images/accoc_logo.webp" width="50" alt="Logo for Ashbury Court Chamber of Commerce"></picture>
                 <h1>Ashbury Court Chamber of Commerce</h1>
             </div> 
             
@@ -45,8 +45,24 @@
     </nav>
     </div>
     <div class="datetracker"><span id="currentDate"></span></div>
-    <main>
-        <div class="cards"></div>
+    <main class="grid-change">
+        <div id="toggle">
+            <h2 id="directory">Business Listings</h2>
+            <button id="gridBtn" class="dirselect">Grid</button>
+            <button id="listBtn">List</button>
+        </div>
+        <div class="cards gridview" id="dirlayout">
+            <!--- drectory info from json/data.json
+            <section>
+                <img src="img locaion" alt="image description">
+                <h3>company name</h3>
+                <p>address</p>
+                <p>phone #</p>
+                <p>website</p>
+                <p>membership</p>
+            </section>
+            -->
+        </div>
     </main>
     <footer>
         <section class="footerTop">
