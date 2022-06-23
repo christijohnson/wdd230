@@ -1,0 +1,22 @@
+body {
+    font-size: 16px;
+    font-family: 'Fresca', sans-serif;
+}
+
+* {
+    text-align: center;
+    background-color: azure;
+}
+
+figure {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 20%;
+}
+
+figcaption {
+    margin: auto;
+}
