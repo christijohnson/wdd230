@@ -54,18 +54,19 @@
         display: none;
     }
 
+    .join p {
+        padding: 20px;
+    }
+
     .join-button {
         background-color: rgb(44, 182, 140);
         border: none;
         border-radius: 12px;
-        padding: 7px 32px;
-        text-align: center;
+        padding: 3px 32px;
         text-decoration: none;
         font-size: 20px;
-        justify-content: center;
-        top: 10%;
-        left: 50%;
         color: black;
+        padding-block-start: initial;
     }
 
     .event {

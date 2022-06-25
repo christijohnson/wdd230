@@ -108,7 +108,7 @@ nav button {
 }
 
 .logo {
-    width: 80px;
+    width: 120px;
     padding: .5rem;
 }
 
@@ -253,14 +253,12 @@ p {
     grid-row: 2/2;
     border: 2.5px solid black;
     justify-content: center;
-    margin-top: 5px;
 }
 .spot3 {
     display: none;
     position: relative;
     border: 2.5px solid black;
     justify-content: center;
-    margin-top: 5px;
 }
 
 .join {
