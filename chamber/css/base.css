@@ -52,7 +52,6 @@ header {
 
 .social {
     text-decoration: none;
-    display: flex;
     color: rgb(3,150,190);
 }
 
@@ -198,7 +197,6 @@ p {
 
 .weather {
     margin: 20px;
-    padding: 10px;
     background-color: #d0a9d6;
     border: 1px solid black;
 }
@@ -211,7 +209,6 @@ p {
 
 #display-weather img {
     grid-column: 1/2;
-    width: 60%;
 }
 
 #temperature {
@@ -291,6 +288,10 @@ footer {
 
 .footerBottom {
     padding-top: .5rem;
+}
+
+footer hr {
+    margin: 10px;
 }
 
 ul.footerBottom {
@@ -531,7 +532,7 @@ form textarea {
     padding: 2px;
 }
 
-.cards section:hover {
+.cards section:hover, .spot1:hover, .spot2:hover, .spot3:hover {
     animation: shake 0.8s;
     animation-iteration-count: infinite;
 }

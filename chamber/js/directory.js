@@ -12,7 +12,6 @@ fetch(requestURL)
 
 function displayBusinesses(business) {
     // create elements to add to the document
-    console.log(business);
     let card = document.createElement("section");
     let h2 = document.createElement("h3");
     let logo = document.createElement("img");

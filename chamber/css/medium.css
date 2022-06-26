@@ -80,16 +80,11 @@
     }
 
     #temperature {
-        font-size: 1.75rem;
-    }
-
-    #display-weather {
-        padding: 10px;
+        font-size: 3rem;
     }
 
     #display-weather img {
-        width: 90%;
-        padding: 10px 0 15px 0;
+        width: 100%; 
     }
 
     .weather p {
