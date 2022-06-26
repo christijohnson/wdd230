@@ -201,6 +201,10 @@ p {
     border: 1px solid black;
 }
 
+.weather figcaption {
+    text-align: center;
+}
+
 #display-weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -468,7 +472,6 @@ form textarea {
     background-color: white;
     border: 1px solid rgba(46,1,63,.05);
     border-radius: 6px;
-    content: center;
     margin: 15px;
 }
 
@@ -532,7 +535,7 @@ form textarea {
     padding: 2px;
 }
 
-.cards section:hover, .spot1:hover, .spot2:hover, .spot3:hover {
+.cards section:hover, .spot1 img:hover, .spot2 img:hover, .spot3 img:hover {
     animation: shake 0.8s;
     animation-iteration-count: infinite;
 }
