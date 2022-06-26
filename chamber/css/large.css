@@ -85,4 +85,12 @@
         justify-content: space-evenly;
     
     }
+
+    /* - join page - */
+
+    #join-title h1 {
+        font-size: 2rem;
+    }
+
+
 }

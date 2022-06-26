@@ -12,10 +12,12 @@ fetch(requestURL)
 
 function displayBusinesses(business) {
     // create elements to add to the document
+    console.log(business);
     let card = document.createElement("section");
     let h2 = document.createElement("h3");
     let logo = document.createElement("img");
     let address = document.createElement("p");
+    let citystate = document.createElement("p");
     let phone = document.createElement("p");
     let website = document.createElement("p");
     let membership = document.createElement("p");
@@ -23,6 +25,7 @@ function displayBusinesses(business) {
     // change textContent property of h2 element to contain prophet's full name
     h2.textContent = `${business.name}`;
     address.textContent = `${business.address}`;
+    citystate.textContent = `${business.citystate}`;
     phone.textContent = `${business.phone}`;
     website.textContent = `${business.website}`;
     membership.textContent = `Membership:  ${business.membership}`;
@@ -36,6 +39,7 @@ function displayBusinesses(business) {
     card.appendChild(logo);
     card.appendChild(h2);
     card.appendChild(address);
+    card.appendChild(citystate);
     card.appendChild(phone);
     card.appendChild(website);
     card.appendChild(membership);

@@ -2,7 +2,8 @@
     "businesses": [
       {
         "name": "Utah Festival Opera and Musical Theater",
-        "address": "59 South 100 West, Logan, UT  84321",
+        "address": "59 South 100 West",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 750-0300",
         "website": "utahfestival.org",
         "membership": "Gold",
@@ -11,7 +12,8 @@
 
       {
         "name": "S.E. Needham Jewelers",
-        "address": "141 North Main Street, Logan, UT  84321",
+        "address": "141 North Main Street",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 752-7149",
         "website": "seneedham.com",
         "membership": "Gold",
@@ -20,7 +22,8 @@
 
       {
         "name": "Lee's Marketplace",
-        "address": "555 East 1400 North, Logan, UT  84341",
+        "address": "555 East 1400 North",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 755-5100",
         "website": "leesmarketplace.com",
         "membership": "Silver",
@@ -29,7 +32,8 @@
 
       {
         "name": "Spindler Construction Corporation",
-        "address": "901 South State Hwy 89/91, Logan, UT  84321",
+        "address": "901 South State Hwy 89/91",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 753-0722",
         "website": "spindlercorp.com",
         "membership": "Bronze",
@@ -38,7 +42,8 @@
 
       {
         "name": "United Way of Cache Valley",
-        "address": "88 West Center Street, Logan, UT  84321",
+        "address": "88 West Center Street",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 554-8631",
         "website": "unitedwayofcachevalley.org",
         "membership": "Non-Profit",
@@ -47,7 +52,8 @@
 
       {
         "name": "Kimberbell Designs",
-        "address": "2442 Wolfpack Way, North Logan, UT  84341",
+        "address": "2442 Wolfpack Way",
+        "citystate":  "North Logan, UT  84341",
         "phone": "(435) 915-6741",
         "website": "kimberbell.com",
         "membership": "Silver",
@@ -56,7 +62,8 @@
 
       {
         "name": "The Jump Zone LLC",
-        "address": "1510 North 200 West, Logan, UT  84341",
+        "address": "1510 North 200 West",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 755-5867",
         "website": "thejumpzonegetair.com",
         "membership": "Bronze",
@@ -65,7 +72,8 @@
 
       {
         "name": "Old Grist Mill Bread Company",
-        "address": "78 East 400 North, Logan, UT  84321",
+        "address": "78 East 400 North",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 753-6463",
         "website": "oldgristmillbreadcompany.com",
         "membership": "Bronze",
@@ -74,7 +82,8 @@
 
       {
         "name": "Thermo Fisher Scientific",
-        "address": "1726 Hyclone Drive, Logan, UT  84321",
+        "address": "1726 Hyclone Drive",
+        "citystate":  "Logan, UT  84321",
         "phone": "(435) 792-8500",
         "website": "thermofisher.com",
         "membership": "Gold",
