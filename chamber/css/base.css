@@ -203,6 +203,7 @@ p {
 
 .weather figcaption {
     text-align: center;
+    font-size: 1.25rem;
 }
 
 #display-weather {
