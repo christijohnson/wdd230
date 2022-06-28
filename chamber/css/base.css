@@ -178,7 +178,7 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 5px;
 }
 
 .event {
@@ -193,6 +193,10 @@ p {
     padding: 1.2rem;
     width: 100%;
     max-width: 300px;
+}
+
+.event p {
+    padding: 0px;
 }
 
 .weather {
@@ -214,6 +218,8 @@ p {
 
 #display-weather img {
     grid-column: 1/2;
+    padding: 10px;
+    width: 80px;
 }
 
 #temperature {
@@ -230,6 +236,10 @@ p {
     padding: 10px;
     background-color: #d0a9d6;
     border: 1px solid black;
+}
+
+.news p {
+    font-size: 1rem;
 }
 
 .spotlight {

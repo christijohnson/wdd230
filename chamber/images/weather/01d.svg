@@ -1,25 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- (c) ammap.com | SVG weather icons -->
-<svg
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="64"
-    height="64"
-    viewbox="0 0 64 64">
-    <defs>
-        <filter id="blur" width="200%" height="200%">
-            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-            <feOffset dx="0" dy="4" result="offsetblur"/>
-            <feComponentTransfer>
-                <feFuncA type="linear" slope="0.05"/>
-            </feComponentTransfer>
-            <feMerge> 
-                <feMergeNode/>
-                <feMergeNode in="SourceGraphic"/> 
-            </feMerge>
-        </filter>
-        <style type="text/css"><![CDATA[
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 64 64" id="svg60" sodipodi:docname="01d (edited).svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)" viewBox="19 19 26 26">
+  <sodipodi:namedview id="namedview62" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" showgrid="false" inkscape:zoom="8.9272231" inkscape:cx="49.567485" inkscape:cy="40.270081" inkscape:window-width="1920" inkscape:window-height="1001" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="svg60"/>
+  <defs id="defs19">
+    <filter id="blur" width="1.6833333" height="1.85" x="-0.34166667" y="-0.34166667">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" id="feGaussianBlur2"/>
+      <feOffset dx="0" dy="4" result="offsetblur" id="feOffset4"/>
+      <feComponentTransfer id="feComponentTransfer8">
+        <feFuncA type="linear" slope="0.05" id="feFuncA6"/>
+      </feComponentTransfer>
+      <feMerge id="feMerge14">
+        <feMergeNode id="feMergeNode10"/>
+        <feMergeNode in="SourceGraphic" id="feMergeNode12"/>
+      </feMerge>
+    </filter>
+    <style type="text/css" id="style17"><![CDATA[
 /*
 ** CLOUDS
 */
@@ -486,36 +479,36 @@
 }
 
         ]]></style>
-    </defs>
-    <g filter="url(#blur)" id="day">
-        <g transform="translate(32,32)">
-            <g class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out">
-                <g>
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(45)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(90)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(135)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(180)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(225)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(270)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-                <g transform="rotate(315)">
-                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
-                </g>
-            </g>
-            <circle cx="0" cy="0" fill="orange" r="5" stroke="orange" stroke-width="2"/>
+  </defs>
+  <g filter="url(#blur)" id="day">
+    <g transform="translate(32,32)" id="g57">
+      <g class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out" id="g53">
+        <g id="g23">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line21"/>
         </g>
+        <g transform="rotate(45)" id="g27">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line25"/>
+        </g>
+        <g transform="rotate(90)" id="g31">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line29"/>
+        </g>
+        <g transform="rotate(135)" id="g35">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line33"/>
+        </g>
+        <g transform="rotate(180)" id="g39">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line37"/>
+        </g>
+        <g transform="rotate(225)" id="g43">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line41"/>
+        </g>
+        <g transform="rotate(270)" id="g47">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line45"/>
+        </g>
+        <g transform="rotate(315)" id="g51">
+          <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" id="line49"/>
+        </g>
+      </g>
+      <circle cx="0" cy="0" fill="orange" r="5" stroke="orange" stroke-width="2" id="circle55"/>
     </g>
+  </g>
 </svg>

@@ -12,6 +12,12 @@
     #primNav {
         position: relative;
     }  
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     /*- main - */
     main {
@@ -54,10 +60,6 @@
         display: none;
     }
 
-    .join p {
-        padding: 20px;
-    }
-
     .join-button {
         background-color: rgb(44, 182, 140);
         border: none;
@@ -80,11 +82,7 @@
     }
 
     #temperature {
-        font-size: 3rem;
-    }
-
-    #display-weather img {
-        width: 100%; 
+        font-size: 2rem;
     }
 
     .weather p {
@@ -194,7 +192,7 @@
     /* - directory = */
     .listview section {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         justify-content: space-around;
     }
 }

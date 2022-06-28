@@ -40,10 +40,10 @@ async function apiFetch(apiURL) {
 		if (temp <= 50 && speed > 3.0) {
 			wchill = windchill(temp, speed).toFixed(2);
 			document.getElementById('chill').textContent = `${wchill}`;
-			document.getElementById('windchill').classList.remove('hide');
+			//document.getElementById('windchill').classList.remove('hide');
 		} else {
 			document.getElementById('chill').textContent = 'N/A';
-			document.getElementById('windchill').classList.add('hide');
+			//document.getElementById('windchill').classList.add('hide');
 		};
 
 	}

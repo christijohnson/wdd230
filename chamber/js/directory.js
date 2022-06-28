@@ -27,7 +27,7 @@ function displayBusinesses(business) {
     citystate.textContent = `${business.citystate}`;
     phone.textContent = `${business.phone}`;
     website.textContent = `${business.website}`;
-    membership.textContent = `Membership:  ${business.membership}`;
+    membership.textContent = `${business.membership} member`;
 
     // build image attributes using setAttribute method for src, alt, loading attribute value
     logo.setAttribute("src", business.imageurl);
