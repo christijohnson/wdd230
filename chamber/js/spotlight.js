@@ -14,7 +14,6 @@ fetch(requestURL)
             spot.push(randomElement);
             businesses = businesses.filter( element => element.name != randomElement.name);
         }
-        console.log(spot);   // temp line - remove
         spot.forEach(displayBusinesses);
 
     });
@@ -26,46 +25,29 @@ fetch(requestURL)
         let card = document.createElement("div");
         let h2 = document.createElement("h2");
         let logo = document.createElement("img");
-        let tagline = document.createElement("p");
-        //let address = document.createElement("p");
-        //let citystate = document.createElement("p");
+        let tagline = document.createElement("h3");
         let phone = document.createElement("p");
         let website = document.createElement("p");
-        //let membership = document.createElement("p");
-
+    
         card.setAttribute("class", `section spot${num}`);
     
-        // change textContent property of h2 element to contain prophet's full name
+        // change textContent property of elements
         h2.textContent = `${business.name}`;
         tagline.textContent = `${business.tagline}`;
-        //address.textContent = `${business.address}`;
-        //citystate.textContent = `${business.citystate}`;
         phone.textContent = `${business.phone}`;
         website.textContent = `${business.website}`;
-        //membership.textContent = `${business.membership} member`;
     
-        console.log(business)
-
-
         // build image attributes using setAttribute method for src, alt, loading attribute value
         logo.setAttribute("src", business.imageurl);
         logo.setAttribute("alt", `Logo of ${business.name}`);
-        //logo.setAttribute("loading", "lazy");
     
-        // add/append section/card with h2 element
+        // add/append section/card elements
         card.appendChild(logo);
         card.appendChild(h2);
         card.appendChild(tagline);
-        //card.appendChild(address);
-        //card.appendChild(citystate);
         card.appendChild(phone);
         card.appendChild(website);
-        //card.appendChild(membership);
 
         cards.append(card);
         num += 1;
-    
-        // add/append existing HTML div with cards class with section/card
-        // document.querySelector("div.cards").appendChild(card);
-        //cards.appendChild(cards);
     }

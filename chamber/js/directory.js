@@ -21,7 +21,6 @@ function displayBusinesses(business) {
     let website = document.createElement("p");
     let membership = document.createElement("p");
 
-    // change textContent property of h2 element to contain prophet's full name
     h2.textContent = `${business.name}`;
     address.textContent = `${business.address}`;
     citystate.textContent = `${business.citystate}`;
@@ -32,9 +31,8 @@ function displayBusinesses(business) {
     // build image attributes using setAttribute method for src, alt, loading attribute value
     logo.setAttribute("src", business.imageurl);
     logo.setAttribute("alt", `Logo of ${business.name}`);
-    //logo.setAttribute("loading", "lazy");
 
-    // add/append section/card with h2 element
+    // add/append section/card with elements
     card.appendChild(logo);
     card.appendChild(h2);
     card.appendChild(address);
@@ -44,7 +42,6 @@ function displayBusinesses(business) {
     card.appendChild(membership);
 
     // add/append existing HTML div with cards class with section/card
-    // document.querySelector("div.cards").appendChild(card);
     cards.appendChild(card);
 }
 

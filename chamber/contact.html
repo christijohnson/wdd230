@@ -52,41 +52,56 @@
     </header>
     <div class="datetracker"><span id="currentDate"></span></div>
     <main class="grid-change">
-    <img class="banner" src="images/bannerphoto.webp" alt="City banner photo">
-    <h2>Contact Us</h2>
+        <picture  class="banner">
+            <source srcset="images/logan_500x200.webp" media="(max-width: 600px)">
+            <source srcset="images/logan_700x300.webp" media="(max-width: 1100px)">
+            <source srcset="images/logan_1000x300.webp" media="(max-width: 2800px)">
+            <img src="images/logan.jpg" alt="City banner photo">                
+        </picture>
+    
         <div id="contact">
-            <form method="get" action="thankyou.html">
-            <form>
-                    <label class="top">First Name*<input type="text" name="fname" required></label>
-                    <label class="top">Last Name*<input  type="text" name="lname" required></label>
-                    <label class="top">Email*<input type="email" name="email" placeholder="youremail@domain.com" required></label>
-                    <label class="top">Business Name*<input type="text" name="bname" title="Business Name" required></label>
-                    <legend>Are you a Chamber Member?*</legend>
-                    <label class="sbs"><input type="radio" name="member" value="yes" required>Yes</label>
-                    <label class="sbs"><input type="radio" name="member" value="no">No</label>
-                    <label class="sbs"><input type="radio" name="member" value="notsure">Not Sure</label>
+            <form method="get" action="thankyou-contact.html">
+            <form id="contact-form">
+                <h2>Contact Us</h2>
+            
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input  type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="youremail@domain.com" required></label>
+                <label class="top">Business Name*<input type="text" name="bname" title="Business Name" required></label>
+                <legend>Are you a Chamber Member?*</legend>
+                <label class="sbs"><input type="radio" name="member" value="yes" required>Yes</label>
+                <label class="sbs"><input type="radio" name="member" value="no">No</label>
+                <label class="sbs"><input type="radio" name="member" value="notsure">Not Sure</label>
                 
-                    <label class="top" for="content">How can we help you?
-                        <textarea name="textarea" id="content"></textarea></label>
-                    <input type="hidden" id="date" name="date" value="currentDate">
-                    <input type="hidden" id="time" name="time" value="currentTime">
-                    <input type="submit" value="Contact Us" name="button" class="submitBtn">
-               </form>
-            </div>
-            <div><h2>Visit Us</h2>
-            <p>Ashbury Chamber of Commerce</p>
-        <p>480 West 900 North<span>Logan, UT  84321</span></p>
-        <p>Monday - Thursday:  9 a.m. to 4 p.m.</p>
-        <p>Friday:  By Appointment Only</p></div>
-        <div><h2>Points of Contact</h2>
-        <p>George Knightley</p>
-        <p>President</p>
-        <p>Elinor Dashwood</p>
-        <p>Development and Sponsorship</p></div>
-        <div><h3>Phone</h3>
-        <p>(435) 555-9876</p>
-        <h3>Email</h3>
-        <p>ashburycourtchamber.com</p></div>
+                <label class="top" for="content">How can we help you?
+                <textarea name="textarea" id="content"></textarea></label>
+                <input type="hidden" id="date" name="date" value="currentDate">
+                <input type="hidden" id="time" name="time" value="currentTime">
+                <input type="submit" value="Contact Us" name="button" class="submitBtn">
+            </form>
+            <section>
+                <div class="visit">
+                    <h2>Visit Us</h2>
+                    <p>Ashbury Chamber of Commerce</p>
+                    <p>480 West 900 North <br> Logan, UT  84321</p>
+                    <p>Monday - Thursday:  9 a.m. to 4 p.m.</p>
+                    <p>Friday:  By Appointment Only</p>
+                </div>
+                <div class="points"><h2>Points of Contact</h2>
+                    <p>George Knightley   -   President</p>
+                    <p>Elinor Dashwood   -   Development and Sponsorship</p>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>(435) 555-9876</p>
+                    <h3>Email</h3>
+                    <p>ashburycourtchamber.com</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2976.70013151205!2d-111.84149153970341!3d41.74856047290965!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1656733262772!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <section class="footerTop">

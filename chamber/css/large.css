@@ -28,7 +28,7 @@
     /* - main - */
     main {
         display: grid;
-        grid-template-columns: 25% 50% 25%;
+        grid-template-columns: 22.5% 55% 22.5%;
     }
 
     .hero {
@@ -40,7 +40,6 @@
         display: flex;
         justify-content: center;
         object-fit: cover;
-        
         width: 100%;
     }
     
@@ -52,19 +51,20 @@
     .spotlight {
         grid-column: 3/4;
         grid-row: 1/5;
-        display: block;   
+        display: block;  
     }
 
     .spot1, .spot2, .spot3 {
         width: 100%;
     }
 
-    .spot3 {
-        display: block;
+    .spot2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-    .spot3 img {
-        width: 90%;
+    .spot3 {
+        display: block;
     }
 
     .join {
@@ -87,7 +87,6 @@
         padding-bottom: 1rem;
         display: flex;
         justify-content: space-evenly;
-    
     }
 
     /* - join page - */
@@ -95,6 +94,5 @@
     #join-title h1 {
         font-size: 2rem;
     }
-
 
 }

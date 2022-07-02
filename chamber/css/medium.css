@@ -198,4 +198,20 @@
 
     /*- contact page -*/
 
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+
+    #contact section h2 {
+        margin-bottom: 10px;
+    }
+
+    .visit h2 {
+        margin-bottom: px;
+    }
+
+    .points, .info {
+        padding: 15px 0;
+    }
 }
