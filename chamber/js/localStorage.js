@@ -19,7 +19,7 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 
 dayssince = Math.round((Date.now() - timesince) / 86400000);
-if (dayssince !== 0) {
+if (numVisits !==1) {
     daysDisplay.textContent = dayssince;
 } else {
     daysDisplay.textContent = `0`;
