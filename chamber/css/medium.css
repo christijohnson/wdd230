@@ -195,4 +195,7 @@
         grid-template-columns: repeat(6, 1fr);
         justify-content: space-around;
     }
+
+    /*- contact page -*/
+
 }

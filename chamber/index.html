@@ -19,7 +19,7 @@
         <div class="sitename">
             <a href="index.html">
                 <picture>
-                    <img class="logo" src="images/accoc_logo.webp" width="50" alt="Logo for Ashbury Court Chamber of Commerce">
+                    <img class="logo" src="images/accoc.svg" width="50" alt="Logo for Ashbury Court Chamber of Commerce">
                 </picture>
             </a>
                 <h1>Ashbury Court Chamber of Commerce</h1>
@@ -58,7 +58,8 @@
                 <source srcset="images/hero_pic_large.webp" media="(max-width: 2100px)">
                 <img src="images/hero_pic.jpg" alt="Ashbury Court Chamber of Commerce picture">                
             </picture>        
-            <a href="join.html" class="hero-button">Join the Chamber</a></div>
+            <a href="join.html" class="hero-button">Join the Chamber</a>
+        </div>
         <div class="section event">
             <h3>Upcoming Event</h3>
                 <img src="images/Bluebird.webp" alt="event">
@@ -79,30 +80,46 @@
             <h3>News Release</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora aliquam quod, ratione illo veritatis, explicabo placeat facere dolor iusto.
 
-            </div>
+        </div>
         <div class="section join">
             <h3 class="hide">Join</h3>
             <a href="join.html" class="join-button">Learn more about us</a>
             <p>Discover how to join the chamber of commerce and learn how it will benefit your organization!</p>
         </div>
-        <section class="section spotlight">
+        <div class="spotlight cards gridview" id="dirlayout">
+            <!--- drectory info from json/data.json
+            <section>
+                <img src="img locaion" alt="image description">
+                <h3>company name</h3>
+                <p>address</p>
+                <p>citystate</p>
+                <p>phone #</p>
+                <p>website</p>
+                <p>membership</p>
+            </section>
+            -->
+        </div>
+        <!--
+        <section class="section spotlight cards">
             <div class="spot1">
                 <h3>Spotlight 1</h3>
-                <img src="images/AnniversaryInn.webp" alt="spot1">
+                <img src="images/businesses/AnniversaryInn.webp" alt="spot1">
             <h4>Come and stay with us!</h4>
             <p>Take a virtual tour to check out our rooms and prices</p><hr><p>169 East Center Street<br>(435) 752-3443</p></div>
             <div class="spot2">
                 <h3>Spotlight 2</h3>
-                <img src="images/Utah_State_University_seal.svg.webp" alt="spot2">
+                <img src="images/businesses/USU.webp" alt="spot2">
             <h4>Follow the Aggies</h4>
             <p>USU Athletics calendar</p><hr>
             <p>Old Main Hill<br>(435) 797-1000</p></div>
             <div class="spot3">
                 <h3>Spotlight 3</h3>
-                <img src="images/ThatcherMansion.webp" alt="spot3">
+                <img src="images/businesses/ThatcherMansion.webp" alt="spot3">
             <h4>Art and Music classes for everyone at the Thatcher-Young Mansion</h4><hr>
             <p>35 West 100 South<br>(435) 752-0026</p></div>
         </section>
+        -->
+
     </main>
     <footer>
         <section class="footerTop">
@@ -132,6 +149,7 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/spotlight.js"></script>
 
 </body>
 </html>

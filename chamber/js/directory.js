@@ -13,7 +13,7 @@ fetch(requestURL)
 function displayBusinesses(business) {
     // create elements to add to the document
     let card = document.createElement("section");
-    let h2 = document.createElement("h3");
+    let h2 = document.createElement("h2");
     let logo = document.createElement("img");
     let address = document.createElement("p");
     let citystate = document.createElement("p");
