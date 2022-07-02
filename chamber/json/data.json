@@ -7,7 +7,8 @@
         "phone": "(435) 750-0300",
         "website": "utahfestival.org",
         "membership": "Gold",
-        "imageurl": "images/businesses/UtahFestivalOpera.webp"
+        "imageurl": "images/businesses/UtahFestivalOpera.webp",
+        "tagline":  "Upcoming Shows"
       },
 
       {
@@ -17,7 +18,8 @@
         "phone": "(435) 752-7149",
         "website": "seneedham.com",
         "membership": "Gold",
-        "imageurl": "images/businesses/seneedhamlogo.webp"
+        "imageurl": "images/businesses/seneedhamlogo.webp",
+        "tagline":  "Where Utah Gets Engaged"
       },
 
       {
@@ -27,7 +29,8 @@
         "phone": "(435) 755-5100",
         "website": "leesmarketplace.com",
         "membership": "Silver",
-        "imageurl": "images/businesses/leesMarketplace.webp"
+        "imageurl": "images/businesses/leesMarketplace.webp",
+        "tagline":  "We Have Everything You Need"
       },
 
       {
@@ -37,7 +40,8 @@
         "phone": "(435) 753-0722",
         "website": "spindlercorp.com",
         "membership": "Bronze",
-        "imageurl": "images/businesses/spindler.webp"
+        "imageurl": "images/businesses/spindler.webp",
+        "tagline":  ""
       },
 
       {
@@ -47,7 +51,8 @@
         "phone": "(435) 554-8631",
         "website": "unitedwayofcachevalley.org",
         "membership": "Non-Profit",
-        "imageurl": "images/businesses/unitedWay.webp"
+        "imageurl": "images/businesses/unitedWay.webp",
+        "tagline":  ""
       },
 
       {
@@ -57,7 +62,8 @@
         "phone": "(435) 915-6741",
         "website": "kimberbell.com",
         "membership": "Silver",
-        "imageurl": "images/businesses/Kimberbell.webp"
+        "imageurl": "images/businesses/Kimberbell.webp",
+        "tagline":  "The Joy of Creativity"
       },
 
       {
@@ -67,7 +73,8 @@
         "phone": "(435) 755-5867",
         "website": "thejumpzonegetair.com",
         "membership": "Bronze",
-        "imageurl": "images/businesses/jumpZone.webp"
+        "imageurl": "images/businesses/jumpZone.webp",
+        "tagline":  ""
       },
 
       {
@@ -77,7 +84,8 @@
         "phone": "(435) 753-6463",
         "website": "oldgristmillbreadcompany.com",
         "membership": "Bronze",
-        "imageurl": "images/businesses/OldGristMill.webp"
+        "imageurl": "images/businesses/OldGristMill.webp",
+        "tagline":  ""
       },
 
       {
@@ -87,7 +95,41 @@
         "phone": "(435) 792-8500",
         "website": "thermofisher.com",
         "membership": "Gold",
-        "imageurl": "images/businesses/thermoFisher.webp"
+        "imageurl": "images/businesses/thermoFisher.webp",
+        "tagline":  "World Leader in Science"
+      },
+
+      {
+        "name": "The Anniversary Inn",
+        "address": "169 East Center Street",
+        "citystate":  "Logan, UT  84321",
+        "phone": "(435) 792-3443",
+        "website": "anniversaryinn.com",
+        "membership": "Gold",
+        "imageurl": "images/businesses/AnniversaryInn.webp",
+        "tagline":  "Come and Stay with Us!"
+      },
+
+      {
+        "name": "Utah State Athletics",
+        "address": "Old Main Hill",
+        "citystate":  "Logan, UT  84321",
+        "phone": "(435) 797-1000",
+        "website": "utahstateaggies.com",
+        "membership": "Gold",
+        "imageurl": "images/businesses/USU.webp",
+        "tagline":  "Follow the Aggies"
+      },
+
+      {
+        "name": "Thatcher-Young Mansion",
+        "address": "35 West 100 South",
+        "citystate":  "Logan, UT  84321",
+        "phone": "(435) 752-0026",
+        "website": "thatchermansion.com",
+        "membership": "Bronze",
+        "imageurl": "images/businesses/ThatcherMansion.webp",
+        "tagline":  ""
       }
     ]
   }
