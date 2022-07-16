@@ -1,0 +1,118 @@
+{
+    "temples": [
+        {
+            "name": "Logan Utah Temple",
+            "address":  "175 N 300 E, Logan, UT",
+            "telephone":  "1.435.752.3611",
+            "services":  [
+                {"s1":  "Clothing rental available",
+                    "s2":  "Proxy appointments are encouraged",
+                    "s3":  "Own ordinance appointments are required"}],
+            "milestones":  [
+                {"m1":  "Announced - Oct 6, 1876",
+                    "m2":  "Groundbreaking - May 18, 1877",
+                    "m3":  "Dedicated - May 17, 1884",
+                    "m4":  "Rededicated - March 13, 1979"}],
+            "templeclosure":  [
+                {"c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
+                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c3":  "Sat Dec 24, 2022",
+                    "c4":  "Sat Dec 31, 2022"}], 
+            "picture":  "images/temples/logan_temple.jpeg"
+        },
+        {
+            "name": "San Diego California Temple",
+            "address":  "7474 Charmant Dr, San Diego, CA",
+            "telephone":  "1.858.622.0991",
+            "services":  [
+                {"s1":  "Clothing rental available",
+                    "s2":  "Distribution center nearby",
+                    "s3":  "Proxy appointments are encouraged",
+                    "s4":  "Own ordinance appointments are required"}],
+            "milestones":  [
+                {"m1":  "Announced - Apr 7, 1984",
+                    "m2":  "Groundbreaking - Feb 27, 1988",
+                    "m3":  "Dedicated - Apr 25, 1993"}],
+            "templeclosure":  [
+                {"c1":  "Sat Oct 1, 2022",
+                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c3":  "Sat Dec 24, 2022",
+                    "c4":  "Sat Dec 31, 2022"}],
+            "picture":  "images/temples/san_diego_california_temple.jpeg"
+        },
+        {
+            "name": "Kona Hawaii Temple",
+            "address":  "75-230 Kalani St, Kailua-Kona, HI",
+            "telephone":  "1.808.331.8504",
+            "services":  [
+                {"s1":  "Proxy appointments are encouraged",
+                    "s2":  "Own ordinance appointments are required"}], 
+            "milestones":  [
+                {"m1":  "Announced - May 7, 1998",
+                    "m2":  "Groundbreaking - Mar 13, 1999",
+                    "m3":  "Dedicated - Jan 23, 2000"}],
+            "templeclosure":  [
+                {"c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
+                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c3":  "Fri Dec 23, 2022 - Sat Dec 24, 2022",
+                    "c4":  "Fri Dec 30, 2022 - Sat Dec 31, 2022"}],
+            "picture":  "images/temples/kona_temple.jpeg"
+        },
+        {
+            "name": "St. Paul Minnesota Temple",
+            "address":  "2150 Hadley Ave N, Oakdale, MN",
+            "telephone":  "1.651.748.5910",
+            "services":  [
+                {"s1":  "Proxy appointments are encouraged",
+                    "s2":  "Own ordinance appointments are required"}], 
+            "milestones":  [
+                {"m1":  "Announced - Jul 29, 1998",
+                    "m2":  "Groundbreaking - Sep 26, 1998",
+                    "m3":  "Dedicated - Jan 9, 2000"}],
+            "templeclosure":  [
+                {"c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
+                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c3":  "Fri Dec 23, 2022 - Sat Dec 24, 2022",
+                    "c4":  "Fri Dec 30, 2022 - Sat Dec 31, 2022"}],
+            "picture":  "images/temples/st_paul_temple.jpeg"
+        },
+        {
+            "name": "Cedar City Utah Temple",
+            "address":  "280 South Cove Dr, Cedar City, UT",
+            "telephone":  "1.435.572.4150",
+            "services":  [
+                {"s1":  "Clothing rental available",
+                    "s2":  "Distribution center nearby",
+                    "s3":  "Proxy appointments are encouraged",
+                    "s4":  "Own ordinance appointments are required"}], 
+            "milestones":  [
+                {"m1":  "Announced - Apr 6, 2013",
+                    "m2":  "Groundbreaking - Aug 8, 2015",
+                    "m3":  "Dedicated - Dec 10, 2017"}],
+            "templeclosure":  [
+                {"c1":  "Sat Oct 1, 2022",
+                    "c2": "Mon Oct 10, 2022 - Mon Oct 24, 2022",
+                    "c3":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c4":  "Sat Dec 24, 2022 - Sun Dec 25, 2022",
+                    "c5":  "Sat Dec 31, 2022 - Sun Jan 1, 2023"}],
+            "picture":  "images/temples/cedar_city_utah_temple.jpeg"
+        },
+        {
+            "name": "Rio de Janeiro Brazil Temple",
+            "address":  "Avenida Das Américas, Nº 9005, Rio De Janeiro, Brazil",
+            "telephone":  "55.21.3906.4600",
+            "services":  [
+                {"s1":  "Patron housing available",
+                    "s2":  "All ordinance appointments are required"}],
+            "milestones":  [
+                {"m1":  "Announced - Apr 6, 2013",
+                    "m2":  "Groundbreaking - Mar 4, 2017",
+                    "m3":  "Dedicated - May 8, 2022"}],
+            "templeclosure":  [
+                {"c1":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c2": "Sat Dec 24, 2022 - Sun Dec 25, 2022",
+                    "c3":  "Sat Dec 31, 2022 - Sun Jan 1, 2023"}],
+            "picture":  "images/temples/rio_de_janeiro_brazil_temple.jpeg"
+        }
+    ]
+}

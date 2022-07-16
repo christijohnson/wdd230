@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations for stays at Temple Inn and Suites - 987-654-3210</title>
+    <meta name="description" content="Make reservations for your stay at Temple Inn and Suites which offers specialized hotel accommodations near temples of The Church of Jesus Christ of Latter-day Saints around the world.">
+    <link rel="shortcut icon" href="Favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@803&family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="temple.html">Temples</a>
+        <a href="reservation.html">Reservations</a>
+        <div class="groupmenu">
+            <a class="level-menu" href="service.html">Services</a>
+            <div class="submenu">
+                <a class="sublink" href="reception-services.html">Reception Services</a>
+                <a class="sublink" href="missionary-services.html">Missionary Services</a>
+            </div>
+        </div>   
+    </nav>       
+    
+    <main>
+        <h1>Reserve Your Stay with Us</h1>
+            <form action="reservation-confirm.html" method="get">
+                <fieldset>
+                    <legend>Reservation Information</legend>
+                    <label for="location">City Location*</label>
+                    <input list="location" required>
+                    <datalist id="location">
+                        <option value="Logan, UT"></option>
+                        <option value="San Diego, CA"></option>
+                    </datalist>
+                    <label for="dates">Dates*</label>
+                    <label>Nights</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                    <input type="date" id="check-out" name="check-out" required>
+                    <label for="number-rooms">Number of Rooms</label>
+                    <input type="number" min="1" max="10" step="1">
+                    <label for="number-adults">Number of Adults per Room</label>
+                    <input type="number" min="1" max="5" step="1">                    
+                    <label for="number-children">Number of Children per Room</label>
+                    <input type="number" min="1" max="5" step="1">
+                    <label for="room-type">Room Type*</label>
+                    <input type="radio" id="king" name="room-type" value="1bed-king">
+                    <label for="king">1 King bed</label>
+                    <input type="radio" id="queen" name="room-type" value="2bed-queen">
+                    <label for="queen">2 Queen beds</label>
+                    <input type="radio" id="queen-kitchen" name="room-type" value="1queen-kitchen">
+                    <label for="queen-kitchen">1 Queen bed with kitchenette</label>
+                    <input type="radio" id="twin-kitchen" name="room-type" value="2twin-kitchen">
+                    <label for="twin-kitchen">2 Twin beds with kitchenette</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Guest Information</legend>
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <!-- hidden field with time / date stamp -->
+                    <label for="home-loc">State or Country*</label>
+                    <input type="text" id="home-loc" name="home-loc" required>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="pnumber">Phone Number*</label>
+                    <input type="tel" id="phone" pattern="[0-9]" required>
+                    <label>Any special accommodations needed or questions?</label>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <button type="button" onclick="submit">Reserve Your Stay</button>
+                </fieldset>
+            </form>
+    
+    </main>
+    <footer>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>

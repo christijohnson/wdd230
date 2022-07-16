@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #729eaa;
+    --secondary-blue: #c5d6d5;
+    --primary-brown: #36281e;
+    --secondary-brown: #a5a098;
+    --grey: #d2d4d2;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  max-width: 1200px;
+  min-width: 360px;
+  margin: 0 auto;
+  background-color: var(--secondary-brown);
+}
+
+h1 {
+  font-family: 'Alegreya', serif;
+  font-size: 2.5rem;
+  padding: 5px;
+  text-shadow: 0 2px 3px var(--grey);  
+}
+
+h2 {
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  color: white;
+}
+
+h3 {
+  font-family: 'Alegreya', serif;  
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px rgb(54,54,54);
+}
+
+/*   header    */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+header img {
+  width: 150px;
+  border-radius: 80px;
+}
+
+.logo {
+  width: 120px;
+  padding: .5rem;
+}
+
+/*   navigation   */
+nav {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+min-width: 32.5em;
+text-align: center;
+}
+
+nav > * {
+flex: 1 1 auto;
+}
+
+nav a {
+  display: block;
+  padding: .8rem 2vw;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: var(--tertiary);
+  color: rgb(3,150,190);
+}
+
+nav ul li a:active {
+  background-color: var(--secondary);
+}
+
+nav ul li a {
+  border: none;
+  border-right: 1px solid var(--secondary);
+  padding: .5rem 3rem;
+  font-size: 1.4rem;
+}
+
+.active {
+  background-image: url("/wdd230/a_final/images/temple.svg");
+  background-color: #cccccc;
+  background-position: left scenter;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  position: relative;
+}
+
+nav > .groupmenu {
+display: grid;
+position: relative;
+}
+
+nav > .groupmenu > .submenu {
+position: absolute;
+display: none;
+top: 100%;
+}
+
+nav > .groupmenu .sublink {
+background: radial-gradient(#bed, #ccc);
+color: #000;
+border: none;
+position: static;
+}
+nav > a,
+nav > .groupmenu > a:first-child {
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-right: none;
+font-weight: 700;
+}
+nav > .groupmenu:last-child > a.level-1 {
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav > a:hover,
+nav > .groupmenu > a:first-child:hover {
+background-color: #000;
+color: #fff;
+}
+nav > .groupmenu:hover > .submenu {
+display: grid;
+z-index: 1;
+width: 100%;
+}
+
+nav .sublink:hover {
+background-color: #333;
+color: #000;
+font-weight: 700;
+}
+
+/*    weather boxes    */
+.weather img {
+    width: 100px;
+}
+
+
