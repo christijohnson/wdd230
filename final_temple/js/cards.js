@@ -23,6 +23,7 @@ function displayTemples(temple) {
     let milestonesList = document.createElement("ul");
     let templeclosure = document.createElement("p");
     let templeclosureList = document.createElement("ul");
+    let likeBtn = document.createElement("button");
     likeBtn.classList.add("btn", "like");
 
     name.textContent = `${temple.name}`;
