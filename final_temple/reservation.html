@@ -15,8 +15,16 @@
 </head>
 <body>
     <header>
+        <h1 class="hidden">Temple Inn and Suites</h1>
+        <a href="index.html">
+            <picture>
+                <img src="images/Temple Inn & Suites Logo.png" width=100 alt=""> 
+            </picture>
+        </a>  
+        <h2 class="contact-number">987.654.3210</h2>  
+        <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
     </header>
-    <nav>
+    <nav id="priNav">
         <a href="index.html">Home</a>
         <a href="temple.html">Temples</a>
         <a href="reservation.html">Reservations</a>
@@ -30,18 +38,22 @@
     </nav>       
     
     <main>
-        <h1>Reserve Your Stay with Us</h1>
+        <h2>Reserve Your Stay with Us</h2>
             <form action="reservation-confirm.html" method="get">
-                <fieldset>
-                    <legend>Reservation Information</legend>
+                <h3>Reservation Information</h3>
+                <fieldset class="top">
                     <label for="location">City Location*</label>
                     <input list="location" required>
                     <datalist id="location">
                         <option value="Logan, UT"></option>
                         <option value="San Diego, CA"></option>
+                        <option value="Kailua-Kona, HI"></option>
+                        <option value="St. Paul, MN"></option>
+                        <option value="Cedar City, UT"></option>
+                        <option value="Rio de Janeiro, Brazil"></option>
                     </datalist>
                     <label for="dates">Dates*</label>
-                    <label>Nights</label>
+                    <!--<label>Nights</label>-->
                     <input type="date" id="check-in" name="check-in" required>
                     <input type="date" id="check-out" name="check-out" required>
                     <label for="number-rooms">Number of Rooms</label>
@@ -60,8 +72,8 @@
                     <input type="radio" id="twin-kitchen" name="room-type" value="2twin-kitchen">
                     <label for="twin-kitchen">2 Twin beds with kitchenette</label>
                 </fieldset>
-                <fieldset>
-                    <legend>Guest Information</legend>
+                <h3>Guest Information</h3>
+                <fieldset class="bottom">
                     <label for="fname">First Name*</label>
                     <input type="text" id="fname" name="fname" required>
                     <label for="lname">Last Name*</label>
@@ -75,7 +87,7 @@
                     <input type="tel" id="phone" pattern="[0-9]" required>
                     <label>Any special accommodations needed or questions?</label>
                     <textarea name="message" rows="10" cols="30"></textarea>
-                    <button type="button" onclick="submit">Reserve Your Stay</button>
+                    <button class="submitBtn" type="button" onclick="submit">Reserve Your Stay</button>
                 </fieldset>
             </form>
     

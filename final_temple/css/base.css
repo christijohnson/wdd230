@@ -24,25 +24,32 @@ body {
   background-color: var(--secondary-brown);
 }
 
-h1 {
+h2 {
   font-family: 'Alegreya', serif;
   font-size: 2.5rem;
   padding: 5px;
   text-shadow: 0 2px 3px var(--grey);  
-}
-
-h2 {
-  font-family: 'Alegreya', serif;
-  font-size: 2rem;
-  color: white;
+  text-align: center;
 }
 
 h3 {
-  font-family: 'Alegreya', serif;  
-  font-size: 1.75rem;
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  background-color: var(--primary-brown);
+  color: white;
+  text-align: center;
 }
 
 h4 {
+  font-family: 'Alegreya', serif;  
+  background-color: var(--secondary-blue);
+  font-size: 1.75rem;
+  text-align: center;
+  border: 10px double var(--primary-blue);
+  margin: 5px 0;
+}
+
+h5 {
   font-family: 'Alegreya', serif;
   font-size: 1.5rem;
 }
@@ -59,6 +66,10 @@ header {
   padding: 20px;
   background-color: var(--primary-blue);
   color: white;
+}
+
+.contact-number {
+  background-color: var(--primary-blue);
 }
 
 header img {
@@ -78,42 +89,30 @@ flex-direction: column;
 margin-bottom: 1rem;
 min-width: 32.5em;
 text-align: center;
+background-color: var(--primary-brown);
+display: none;
 }
 
-nav > * {
-flex: 1 1 auto;
+nav.open {
+  display: flex;
 }
 
 nav a {
   display: block;
-  padding: .8rem 2vw;
-  text-decoration: none;
-  color: black;
-}
-
-nav ul li a:hover {
-  background-color: var(--tertiary);
-  color: rgb(3,150,190);
-}
-
-nav ul li a:active {
-  background-color: var(--secondary);
-}
-
-nav ul li a {
-  border: none;
-  border-right: 1px solid var(--secondary);
   padding: .5rem 3rem;
+  text-decoration: none;
+  color: white;
   font-size: 1.4rem;
 }
 
 .active {
-  background-image: url("/wdd230/a_final/images/temple.svg");
-  background-color: #cccccc;
-  background-position: left scenter;
+  background-image: url("/wdd230/final_temple/images/temple.svg");
+  background-color: var(--grey);
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
   position: relative;
+  color: black;
 }
 
 nav > .groupmenu {
@@ -128,11 +127,12 @@ top: 100%;
 }
 
 nav > .groupmenu .sublink {
-background: radial-gradient(#bed, #ccc);
-color: #000;
+background: var(--primary-brown);
+color: white;
 border: none;
 position: static;
 }
+
 nav > a,
 nav > .groupmenu > a:first-child {
 border: 1px solid rgba(0, 0, 0, 0.1);
@@ -144,8 +144,8 @@ border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 nav > a:hover,
 nav > .groupmenu > a:first-child:hover {
-background-color: #000;
-color: #fff;
+background-color: var(--secondary-blue);
+color: black;
 }
 nav > .groupmenu:hover > .submenu {
 display: grid;
@@ -154,14 +154,225 @@ width: 100%;
 }
 
 nav .sublink:hover {
-background-color: #333;
+background-color: var(--secondary-blue);
 color: #000;
 font-weight: 700;
+}
+
+#hamBtn {
+  background: transparent;
+  border: none;
+  align-self: start;
+}
+
+#hamBtn span {
+  font-size: 30px;
+}
+
+#hamBtn span:nth-child(1) {
+  display: flex;
+}
+
+#hamBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamBtn.open span:nth-child(2) {
+  display: flex;
+}
+
+/*   main     */
+p {
+  padding: 10px;
+  line-height: 1.7rem;
+  text-indent: 2em;
+}
+
+.reservation {
+  background-color: var(--primary-brown);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+#contact-btn {
+  text-align: center;
+}
+
+#quote {
+  margin: 0 2.5rem;
+  padding: 5px;
+  border-top: 1px solid var(--primary-blue);
+}
+
+#cite {
+  text-align: right;
 }
 
 /*    weather boxes    */
 .weather img {
     width: 100px;
+    border: none;
+    box-shadow: none;
 }
 
+.weather {
+  margin: 15px;
+  padding: 10px 10px 0 10px;
+  border: 2px solid var(--primary-blue);
+  background-color: var(--grey);
+  border-top: 4px solid var(--primary-blue);
+}
 
+.weather h4 {
+  text-align: center;
+}
+
+#display-weather {
+  display: grid;
+  grid-template-columns: 50%;
+  margin-top: 15px;
+}
+
+.weather-icon {
+  grid-column: 1/2;
+  padding: 10px;
+}
+
+#current-temp {
+  font-size: 3rem;
+}
+
+.weather-stats {
+  margin-top: 10px;
+  padding-top: 5px;
+  grid-column: 2/3;
+  padding: 10px;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border:  2px solid var(--primary-blue);
+  background-color: var(--grey);
+  margin: 0 -12px;
+}
+
+.forecast div {
+  border:  2px solid var(--primary-blue);
+  background-color: var(--grey);
+  margin: 0 -2px;
+  text-align: center;
+  padding-top: 10px 0;
+}
+
+.social {
+  background-color: white;
+  text-align: center;
+  padding: 3px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.social img {
+  width: 48px;
+}
+
+.like {
+  filter: invert(100%);
+}
+
+/* reservation  */
+form fieldset {
+  margin: 1.5rem 0;
+  border: 1px solid var(--primary-blue);
+  border-radius: 5px;
+  padding: .75rem;
+}
+
+form label {
+  color: black;
+  margin: 0 1.5rem;
+  padding: 0 .75rem;
+  font-size: 1.25rem;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+fieldset label.top input {
+  display: block;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: .75rem;
+  color: black;
+  width: 100%;
+  max-width: 35rem;
+}
+
+/* form label.top select */
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0 1rem 1.75rem;
+  color: black;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+form section {
+  padding: 10px;
+}
+
+.submitBtn {
+  border-radius: 1rem;
+  background-color: var(--primary-brown);
+  color: white;
+  padding: .75rem .5rem;
+  margin: 0 0 2rem 2%;
+  width: 95%;
+  font-size: 120%;
+  text-align: center;
+}
+
+form label.top input:required {
+  border-left: red solid 8px;
+}
+
+form label.top input:required:valid {
+  border-left:rgba(118, 0, 164,0.5) solid 3px;
+}
+
+form textarea {
+  width: 100%;
+  max-width: 45rem;
+  height: 10rem;
+  background-color: rgba(243,238,245,0.5);
+  border: 1px solid black;
+  display: block;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+
+}
+
+/*  footer*/
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-blue);
+  color: black;
+}

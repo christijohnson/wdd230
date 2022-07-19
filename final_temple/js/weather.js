@@ -1,10 +1,16 @@
 const currentTemp = document.querySelector('#current-temp');
+const currenthum = document.querySelector('#current-hum');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const windspeed = document.querySelector('wind');
 const day1Temp = document.querySelector('#day1-temp');
+const weatherIcon1 = document.querySelector('#weather-icon1');
+const captionDesc1 = document.querySelector('#figcaption1');
 const day2Temp = document.querySelector('#day2-temp');
+const weatherIcon2 = document.querySelector('#weather-icon2');
+const captionDesc2 = document.querySelector('#figcaption2');
 const day3Temp = document.querySelector('#day3-temp');
+const weatherIcon3 = document.querySelector('#weather-icon3');
+const captionDesc3 = document.querySelector('#figcaption3');
 
 let wchill = 0
 const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.7334653&lon=-111.8277686&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
@@ -14,13 +20,13 @@ async function apiFetch(apiURL) {
 			const response = await fetch(url);
 			if (response.ok) {
 				const data = await response.json();
-				console.log(data); // this is for testing the call
+				//	console.log(data); // this is for testing the call
 				displayResults(data);
 			} else {
 					throw Error(await response.text());
 			}
 		} catch (error) {
-				console.log(error);
+//				console.log(error);
 		}
 	}
 
@@ -28,17 +34,9 @@ async function apiFetch(apiURL) {
 
 	function  displayResults(weatherData) {
 		const temp = weatherData.current.temp;
-		const speed = weatherData.current.wind_speed;
+		const hum = weatherData.current.humidity;
 		currentTemp.innerHTML = `<strong>${temp.toFixed(0)}</strong>`;
-		wind.innerHTML = `<strong>${speed.toFixed(0)}</strong>`;
-
-		const tempday1 = weatherData.daily[0].temp.max;
-		const tempday2 = weatherData.daily[1].temp.max;
-		const tempday3 = weatherData.daily[2].temp.max ;
-		
-		day1Temp.innerHTML = `<strong>${tempday1.toFixed(0)}</strong>`;
-		day2Temp.innerHTML = `<strong>${tempday2.toFixed(0)}</strong>`;
-		day3Temp.innerHTML = `<strong>${tempday3.toFixed(0)}</strong>`;
+		currenthum.innerHTML = `<strong>${hum}</strong>`;
 
 		const iconsrc = `images/weather/${weatherData.current.weather[0].icon}.svg`;
 		const desc = weatherData.current.weather[0].description;
@@ -47,14 +45,31 @@ async function apiFetch(apiURL) {
 		weatherIcon.setAttribute('alt', desc);
 		captionDesc.textContent = titleCase(desc);
 
-		if (temp <= 50 && speed > 3.0) {
-			wchill = windchill(temp, speed).toFixed(2);
-			document.getElementById('chill').textContent = `${wchill}`;
-			//document.getElementById('windchill').classList.remove('hide');
-		} else {
-			document.getElementById('chill').textContent = 'N/A';
-			//document.getElementById('windchill').classList.add('hide');
-		};
+		const tempday1 = weatherData.daily[1].temp.max;
+		const tempday2 = weatherData.daily[2].temp.max;
+		const tempday3 = weatherData.daily[3].temp.max;
+		const desc1 = weatherData.daily[1].weather[0].description;
+		const desc2 = weatherData.daily[2].weather[0].description;
+		const desc3 = weatherData.daily[3].weather[0].description;
+		
+		day1Temp.innerHTML = `<strong>${tempday1.toFixed(0)}</strong>`;
+		day2Temp.innerHTML = `<strong>${tempday2.toFixed(0)}</strong>`;
+		day3Temp.innerHTML = `<strong>${tempday3.toFixed(0)}</strong>`;
+		
+		const iconsrc1 = `images/weather/${weatherData.daily[1].weather[0].icon}.svg`;
+		weatherIcon1.setAttribute('src', iconsrc1);
+		weatherIcon1.setAttribute('alt', desc1);
+		captionDesc1.textContent = titleCase(desc1);
+
+		const iconsrc2 = `images/weather/${weatherData.daily[2].weather[0].icon}.svg`;
+		weatherIcon2.setAttribute('src', iconsrc2);
+		weatherIcon2.setAttribute('alt', desc2);
+		captionDesc2.textContent = titleCase(desc2);
+
+		const iconsrc3 = `images/weather/${weatherData.daily[3].weather[0].icon}.svg`;
+		weatherIcon3.setAttribute('src', iconsrc3);
+		weatherIcon3.setAttribute('alt', desc3);
+		captionDesc3.textContent = titleCase(desc3);
 	}
 
 // Title Case Conversion
@@ -63,11 +78,4 @@ async function apiFetch(apiURL) {
 		return str.toLowerCase().split(' ').map(function(word) {
 			return (word.charAt(0).toUpperCase() + word.slice(1));
 		}).join(' ');
-	}
-
-// wind chill conversion
-
-	function windchill(temp, speed) {
-		return (
-		35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed,.16)));
 	}

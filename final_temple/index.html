@@ -22,12 +22,13 @@
         <h1 class="hidden">Temple Inn and Suites</h1>
         <a href="index.html">
             <picture>
-                <img src="images/Temple Inn & Suites Logo.png" width=100 alt="">  <!--  logo  include href to main -->
+                <img src="images/Temple Inn & Suites Logo.png" width=100 alt=""> 
             </picture>
         </a>  
-        <h2>987.654.3210</h2>  
+        <h2 class="contact-number">987.654.3210</h2>  
+        <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
     </header>
-    <nav>
+    <nav id="priNav">
         <a href="index.html">Home</a>
         <a href="temple.html">Temples</a>
         <a href="reservation.html">Reservations</a>
@@ -40,8 +41,9 @@
         </div>   
     </nav>        
     <main>
+        <h3 class="hidden">Alerts</h3>
         <!-- place for weather alerts  -->
-        <h3>Temple Inn and Suites</h3>
+        <h4>Temple Inn and Suites</h4>
         <p>Do you need to reserve a room while visiting the temple?  We offer specialized accommodations
             and services for your stay.  We offer long-term accommodations, wedding receptions, large
             group accommodations, and child care services.  Reserve a place to stay today!</p>
@@ -50,8 +52,8 @@
             <source srcset="images/boise_idaho_temple_medium.jpg" media="(max-width: 1100px)">
             <source srcset="images/boise_idaho_temple_large.jpg" media="(max-width: 2100px)">
             <img src="images/boise_idaho_temple_large.jpg" alt="Temple Lobby">
-        <button>Make a Reservation</button>
         </picture>
+        <div id="contact-btn"><button class="reservation">Make a Reservation</button></div>
         <p>We offer you a place to stay when you are far from home and are enjoying the blessings of
             temple worship.  We have accommodations to help you quickly change and a shuttle to deliver
             you to the front door of the temple.  We can also help you research your family line and look
@@ -75,33 +77,65 @@
             progressive-style muraled ordinance rooms for live-acting presentation of the endowment ceremony
             which was replaced with equipment for motion-picture presentation of the endowment during
             the 1976-1979 reconstruction.</p>
-        <em>"There exists a righteous unity between the temple and the home.  Understanding the eternal
+    
+        <div id="quote"><em>"There exists a righteous unity between the temple and the home.  Understanding the eternal
             nature of the temple will draw you to your family; understanding the eternal nature of
             the family will draw you to the temple."</em>   
-            <div class="quote">- Elder Gary E. Stevenson</div>
+            <div id="cite">- Elder Gary E. Stevenson</div></div>
         <div class="weather">
-            <h4>Current Weather Conditions for</h4>
-            <h4>Logan, Utah</h4>
+            <h5>Weather Conditions for Logan, Utah</h5>
+            <hr>
             <figure id="display-weather">
-                <img src="images/placeholder_400x300.webp" alt="placeholder" id="weather-icon">
-                <p id="temperature"><span id="current-temp"></span> &deg;F</p>
-                <figcaption>  <!--needed?-->
+                <img id="weather-icon" src="images/placeholder_400x300.webp" alt="placeholder">
+                <div class="weather-stats"><p id="temperature"><span id="current-temp"></span> &deg;F</p>
+                <p>Humidity:  <span id="current-hum">N/A</span>%</p></div>
+                <figcaption>
                 </figcaption>
             </figure>
-            <p id="temperature">Tomorrow<span id="day1-temp"></span> &deg;F</p>
-            <p id="temperature">2<sup>nd</sup> day<span id="day2-temp"></span> &deg;F</p>
-            <p id="temperature">3<sup>rd</sup> day<span id="day3-temp"></span> &deg;F</p>
-            <hr>
-            <p>Wind Speed:  <span id="wind">N/A</span> mph</p><p id="windchill">Wind Chill:  <span id="chill">N/A</span> &deg;F</p>
+            <div class="forecast">
+            <div>
+                <figure>
+                    <p class="hidden">Tomorrow</p>
+                    <img id="weather-icon1" src="images/placeholder_400x300.webp" alt="placeholder">
+                    <p><span id="day1-temp"></span> &deg;F</p>
+                    <figcaption id="figcaption1"></figcaption>
+                </figure></div>
+            <div>
+                <figure>
+                    <p class="hidden">2<sup>nd</sup> day</p>
+                    <img id="weather-icon2" src="images/placeholder_400x300.webp" alt="placeholder">
+                    <p><span id="day2-temp"></span> &deg;F</p>
+                    <figcaption id="figcaption2"></figcaption>
+                </figure></div>
+            <div>
+                <figure>
+                    <p class="hidden">3<sup>rd</sup> day</p>
+                    <img id="weather-icon3" src="images/placeholder_400x300.webp" alt="placeholder">
+                    <p><span id="day3-temp"></span> &deg;F</p>
+                    <figcaption id="figcaption3"></figcaption>
+                </figure></div>
+            </div>
         </div>
-        <!-- social media links -->
-        <!-- 3-day forcast  -->
+        <div class="social">
+            <a href="facebook.com"><img src="images/social/facebook.png" alt="facebook logo" target="_blank"></a>
+            <a href="instagram.com"><img src="images/social/instagram.png" alt="instagram logo" target="_blank"></a>
+            <a href="pinterest.com"><img src="images/social/pinterest.png" alt="pinterest logo" target="_blank"></a>
+            <a href="twitter.com"><img src="images/social/twitter3.webp" alt="twitter logo" target="_blank"></a>
+        </div>
+        
     </main>
     <footer>
         <div>
-            <!-- map picture and contact details and contact us link  -->
-            <p>Weather provided by <a href="http://openweathermap.org" target="_blank">openweathermap.org</a></p> 
-            <p>Weather Icons provided by <a href="http://amcharts.com" target="_blank">amCharts</a></p> 
+            <!--href-->
+            <img src="images/map.png" alt="map of headquarters">
+            <address>4800 Montgomery Ln #300 Bethesda, MD 20814</address>
+            <p>&copy;<span id="currentyear"></span> Temple Inn and Suites</p>
+            <p>Christi Johnson-WDD230 Project</p> 
+            <p>Last Updated: <span id="updated"></span></p>
+            <p>Source information found <a href="resources.html"></a></p>
+            <!-- sources link and contact details and contact us link  -->
+            
+
         </div>
     </footer>
 

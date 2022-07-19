@@ -1,4 +1,4 @@
-const requesturl = "https://christijohnson.github.io/wdd230/final_temple/json/temples.json";
+const requesturl = "/wdd230/final_temple/json/temples.json";
 const cards = document.querySelector(".cards");
 
 fetch (requesturl)
@@ -13,7 +13,7 @@ fetch (requesturl)
 
 function displayTemples(temple) {
     let card = document.createElement("section");
-    let name = document.createElement("h2");
+    let name = document.createElement("h3");
     let picture = document.createElement("img");
     let address = document.createElement("address");
     let phone = document.createElement("p");
@@ -24,22 +24,23 @@ function displayTemples(temple) {
     let templeclosure = document.createElement("p");
     let templeclosureList = document.createElement("ul");
     let likeBtn = document.createElement("button");
-    likeBtn.classList.add("btn", "like");
+    likeBtn.classList.add("btn");
+    likeBtn.setAttribute("id","likeBtn")
 
     name.textContent = `${temple.name}`;
     address.textContent = `${temple.address}`;
-    phone.textContent = `${temple.phone}`;
+    phone.textContent = `${temple.telephone}`;
     services.textContent = `Services offered:`;
-    servicesList.textContent = `<li>${s1}</li><li>${s2}</li>`;
+    servicesList.innerHTML = `<li>${temple.services[0].s1}</li><li>${temple.services[0].s2}</li>`;
     milestones.textContent = `Milestones:`;
-    milestonesList.textContent = `<li>${m1}</li><li>${m1}</li>`;
+    milestonesList.innerHTML = `<li>${temple.milestones[0].m1}</li><li>${temple.milestones[0].m2}</li>`;
     templeclosure.textContent = `Temple Closures`;
-    templeclosureList.textContent = `<li>${c1}</li><li>${c2}</li>`;
-
-    picture.setAttribute("src", temple.imageurl);
+    templeclosureList.innerHTML = `<li>${temple.templeclosure[0].c1}</li><li>${temple.templeclosure[0].c2}</li>`;
+    likeBtn.innerHTML = `<img src="images/temple.svg" height="30px">`;
+    
+    picture.setAttribute("src", temple.picture);
     picture.setAttribute("alt", `Image of the ${temple.name}`);
     picture.setAttribute("loading", "lazy");
-
     card.appendChild(name);
     card.appendChild(picture);
     card.appendChild(address);
