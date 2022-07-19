@@ -31,7 +31,16 @@ function displayTemples(temple) {
     address.textContent = `${temple.address}`;
     phone.textContent = `${temple.telephone}`;
     services.textContent = `Services offered:`;
-    servicesList.innerHTML = `<li>${temple.services[0].s1}</li><li>${temple.services[0].s2}</li>`;
+//    servicesList.innerHTML = `<li>${temple.services[0].s1}</li><li>${temple.services[0].s2}</li>`;
+//////////
+    let servicesarray = (temple.services[0])
+    servicesList.innerHTML = buildList(servicesarray)
+
+//    var data = JSON.parse(servicesarray);
+
+//    var list = document.createElement("ul");
+//    for (let i of data) { var item = document.createElement("li"); list.appendChild(item); }
+///////////
     milestones.textContent = `Milestones:`;
     milestonesList.innerHTML = `<li>${temple.milestones[0].m1}</li><li>${temple.milestones[0].m2}</li>`;
     templeclosure.textContent = `Temple Closures`;
@@ -54,4 +63,24 @@ function displayTemples(temple) {
     card.appendChild(likeBtn);
 
     cards.appendChild(card);
+}
+
+function buildList(data){
+    console.log(data)
+    var html = ""
+    for(item in data){
+        html += '<li>';
+        if(typeof(data[item].sub) === 'object'){ // An array will return 'object'
+            if(isSub){
+                html += data[item].name;
+            } else {
+                html += data[item].name; // Submenu found, but top level list item.
+            }
+            html += buildList(data[item].sub, true); // Submenu found. Calling recursively same method (and wrapping it in a div)
+        } else {
+            html += data[item].id // No submenu
+        }
+        html += '</li>';
+    }
+    return html;
 }
