@@ -18,11 +18,11 @@
         <h1 class="hidden">Temple Inn and Suites</h1>
         <a href="index.html">
             <picture>
-                <img src="images/Temple Inn & Suites Logo.png" width=100 alt=""> 
+                <img src="images/Temple_Inn_and_Suites_Logo.webp" width=100 alt="Temple_Inn_and_Suites_Logo"> 
             </picture>
         </a>  
-        <h2 class="contact-number">987.654.3210</h2>  
-        <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
+        <p class="contact-number">987.654.3210</p>  
+        <div class="menu-btn"><button id="hamBtn"><span>&#9776;</span><span>X</span></button></div>
     </header>
     <nav id="priNav">
         <a href="index.html">Home</a>
@@ -40,10 +40,11 @@
     <main>
         <h2>Reserve Your Stay with Us</h2>
             <form action="reservation-confirm.html" method="get">
-                <h3>Reservation Information</h3>
-                <fieldset class="top">
-                    <label for="location">City Location*</label>
-                    <input list="location" required>
+                <h3 class="hidden">Information</h3>
+                    <h4>Reservation Information</h4>
+                <fieldset>
+                    <label class="field" for="location">City Location*
+                    <input list="location" required></label>
                     <datalist id="location">
                         <option value="Logan, UT"></option>
                         <option value="San Diego, CA"></option>
@@ -52,47 +53,58 @@
                         <option value="Cedar City, UT"></option>
                         <option value="Rio de Janeiro, Brazil"></option>
                     </datalist>
-                    <label for="dates">Dates*</label>
-                    <!--<label>Nights</label>-->
-                    <input type="date" id="check-in" name="check-in" required>
-                    <input type="date" id="check-out" name="check-out" required>
-                    <label for="number-rooms">Number of Rooms</label>
-                    <input type="number" min="1" max="10" step="1">
-                    <label for="number-adults">Number of Adults per Room</label>
-                    <input type="number" min="1" max="5" step="1">                    
-                    <label for="number-children">Number of Children per Room</label>
-                    <input type="number" min="1" max="5" step="1">
+                    <label class="select" for="dates">Dates*
+                    <div id="dates"><input type="date" id="check-in" name="check-in" required>
+                    <input type="date" id="check-out" name="check-out" required></div></label>
+                    <label class="select" for="number-rooms">Number of Rooms*
+                    <input type="number" min="1" max="10" step="1" required></label>
+                    <label class="select" for="number-adults">Number of Adults per Room
+                    <input type="number" min="1" max="5" step="1"></label>                    
+                    <label class="select" for="number-children">Number of Children per Room
+                    <input type="number" min="0" max="5" step="1"></label>
                     <label for="room-type">Room Type*</label>
-                    <input type="radio" id="king" name="room-type" value="1bed-king">
-                    <label for="king">1 King bed</label>
-                    <input type="radio" id="queen" name="room-type" value="2bed-queen">
-                    <label for="queen">2 Queen beds</label>
-                    <input type="radio" id="queen-kitchen" name="room-type" value="1queen-kitchen">
-                    <label for="queen-kitchen">1 Queen bed with kitchenette</label>
-                    <input type="radio" id="twin-kitchen" name="room-type" value="2twin-kitchen">
-                    <label for="twin-kitchen">2 Twin beds with kitchenette</label>
+                    <label class="sbs" for="king">
+                    <input type="radio" id="king" name="room-type" value="1bed-king" required>1 King bed</label>
+                    <label class="sbs" for="queen">
+                    <input type="radio" id="queen" name="room-type" value="2bed-queen" required>2 Queen beds</label>
+                    <label class="sbs" for="queen-kitchen">
+                    <input type="radio" id="queen-kitchen" name="room-type" value="1queen-kitchen" required>1 Queen bed with kitchenette</label>
+                    <label class="sbs" for="twin-kitchen">
+                    <input type="radio" id="twin-kitchen" name="room-type" value="2twin-kitchen" required>2 Twin beds with kitchenette</label>
                 </fieldset>
-                <h3>Guest Information</h3>
-                <fieldset class="bottom">
-                    <label for="fname">First Name*</label>
-                    <input type="text" id="fname" name="fname" required>
-                    <label for="lname">Last Name*</label>
-                    <input type="text" id="lname" name="lname" required>
-                    <!-- hidden field with time / date stamp -->
-                    <label for="home-loc">State or Country*</label>
-                    <input type="text" id="home-loc" name="home-loc" required>
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="pnumber">Phone Number*</label>
-                    <input type="tel" id="phone" pattern="[0-9]" required>
-                    <label>Any special accommodations needed or questions?</label>
-                    <textarea name="message" rows="10" cols="30"></textarea>
-                    <button class="submitBtn" type="button" onclick="submit">Reserve Your Stay</button>
+                <h4>Guest Information</h4>
+                <fieldset>
+                    <label class="field" for="fname">First Name*
+                    <input type="text" id="fname" name="fname" required></label>
+                    <label class="field" for="lname">Last Name*
+                    <input type="text" id="lname" name="lname" required></label>
+                    <label class="field" for="home-loc">State or Country*
+                    <input type="text" id="home-loc" name="home-loc" required></label>
+                    <label class="field" for="email">Email*
+                    <input type="email" id="email" name="email" required></label>
+                    <label class="field" for="phone">Phone Number*
+                    <input type="tel" id="phone" pattern="[0-9]{10,11}" required></label>
+                    <label>Any special accommodations needed or questions?
+                    <textarea name="message" rows="10" cols="30"></textarea></label>
+                    <input type="submit" value="Reserve Your Stay" name="button" class="submitBtn">
                 </fieldset>
             </form>
-    
     </main>
-    <footer>
+    <footer class="position">
+        <div class="resource">
+            <a href="https://goo.gl/maps/bBDFJHbRBXWHHr4i9" target="_blank"><img src="images/map.webp" alt="map of headquarters" loading="lazy"></a></div>
+            <div class="location"><p>Temple Inn & Suites Headquarters</p>
+                <address>4800 Montgomery Ln #300 Bethesda, MD 20814</address>
+            <a href="contact.html">Contact Us!</a></div>  
+            <div class="detail"><p>&copy;<span id="currentyear"></span> Temple Inn and Suites | Christi Johnson | WDD230 Final Project</p> 
+            <p>Last Updated: <span id="updated"></span></p>
+            <p>Source information found <a href="resources.html">here.</a></p></div>  
+            <div class="social">
+                <a href="facebook.com" target="_blank"><img src="images/social/facebook.webp" alt="facebook logo"></a>
+                <a href="instagram.com" target="_blank"><img src="images/social/instagram.webp" alt="instagram logo"></a>
+                <a href="pinterest.com" target="_blank"><img src="images/social/pinterest.webp" alt="pinterest logo"></a>
+                <a href="twitter.com" target="_blank"><img src="images/social/twitter.webp" alt="twitter logo"></a>
+            </div> 
     </footer>
     <script src="js/menu.js"></script>
 </body>

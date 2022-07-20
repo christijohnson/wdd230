@@ -1,6 +1,31 @@
 @media only screen and (min-width: 600px) {
 
-@media screen {
+/*  services   */
+.services ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  /*  footer  */
+  .position {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+
+  .social {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .resource {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .location {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
     
 }
-/*  600px   */

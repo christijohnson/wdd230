@@ -1,6 +1,7 @@
 {
     "temples": [
         {
+            "id": "1",
             "name": "Logan Utah Temple",
             "address":  "175 N 300 E, Logan, UT",
             "telephone":  "1.435.752.3611",
@@ -24,9 +25,10 @@
                     "c3":  "Sat Dec 24, 2022",
                     "c4":  "Sat Dec 31, 2022"
                 }], 
-            "picture":  "images/temples/logan_temple.jpg"
+            "picture":  "images/temples/logan_temple.webp"
         },
         {
+            "id": "2",
             "name": "San Diego California Temple",
             "address":  "7474 Charmant Dr, San Diego, CA",
             "telephone":  "1.858.622.0991",
@@ -50,57 +52,10 @@
                     "c3":  "Sat Dec 24, 2022",
                     "c4":  "Sat Dec 31, 2022"
                 }],
-            "picture":  "images/temples/san_diego_california_temple.jpeg"
+            "picture":  "images/temples/san_diego_california_temple.webp"
         },
         {
-            "name": "Kona Hawaii Temple",
-            "address":  "75-230 Kalani St, Kailua-Kona, HI",
-            "telephone":  "1.808.331.8504",
-            "services":  [
-                {
-                    "s1":  "Proxy appointments are encouraged",
-                    "s2":  "Own ordinance appointments are required"
-                }], 
-            "milestones":  [
-                {
-                    "m1":  "Announced - May 7, 1998",
-                    "m2":  "Groundbreaking - Mar 13, 1999",
-                    "m3":  "Dedicated - Jan 23, 2000"
-                }],
-            "templeclosure":  [
-                {
-                    "c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
-                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
-                    "c3":  "Fri Dec 23, 2022 - Sat Dec 24, 2022",
-                    "c4":  "Fri Dec 30, 2022 - Sat Dec 31, 2022"
-                }],
-            "picture":  "images/temples/kona_temple.png"
-        },
-        {
-            "name": "St. Paul Minnesota Temple",
-            "address":  "2150 Hadley Ave N, Oakdale, MN",
-            "telephone":  "1.651.748.5910",
-            "services":  [
-                {
-                    "s1":  "Proxy appointments are encouraged",
-                    "s2":  "Own ordinance appointments are required"
-                }], 
-            "milestones":  [
-                {
-                    "m1":  "Announced - Jul 29, 1998",
-                    "m2":  "Groundbreaking - Sep 26, 1998",
-                    "m3":  "Dedicated - Jan 9, 2000"
-                }],
-            "templeclosure":  [
-                {
-                    "c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
-                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
-                    "c3":  "Fri Dec 23, 2022 - Sat Dec 24, 2022",
-                    "c4":  "Fri Dec 30, 2022 - Sat Dec 31, 2022"
-                }],
-            "picture":  "images/temples/st_paul_temple.jpeg"
-        },
-        {
+            "id": "3",
             "name": "Cedar City Utah Temple",
             "address":  "280 South Cove Dr, Cedar City, UT",
             "telephone":  "1.435.572.4150",
@@ -125,9 +80,60 @@
                     "c4":  "Sat Dec 24, 2022 - Sun Dec 25, 2022",
                     "c5":  "Sat Dec 31, 2022 - Sun Jan 1, 2023"
                 }],
-            "picture":  "images/temples/cedar_city_utah_temple.jpeg"
+            "picture":  "images/temples/cedar_city_utah_temple.webp"
         },
         {
+            "id": "4",
+            "name": "St. Paul Minnesota Temple",
+            "address":  "2150 Hadley Ave N, Oakdale, MN",
+            "telephone":  "1.651.748.5910",
+            "services":  [
+                {
+                    "s1":  "Proxy appointments are encouraged",
+                    "s2":  "Own ordinance appointments are required"
+                }], 
+            "milestones":  [
+                {
+                    "m1":  "Announced - Jul 29, 1998",
+                    "m2":  "Groundbreaking - Sep 26, 1998",
+                    "m3":  "Dedicated - Jan 9, 2000"
+                }],
+            "templeclosure":  [
+                {
+                    "c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
+                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c3":  "Fri Dec 23, 2022 - Sat Dec 24, 2022",
+                    "c4":  "Fri Dec 30, 2022 - Sat Dec 31, 2022"
+                }],
+            "picture":  "images/temples/st_paul_temple.webp"
+        },
+        {
+            "id": "5",
+            "name": "Kona Hawaii Temple",
+            "address":  "75-230 Kalani St, Kailua-Kona, HI",
+            "telephone":  "1.808.331.8504",
+            "services":  [
+                {
+                    "s1":  "Proxy appointments are encouraged",
+                    "s2":  "Own ordinance appointments are required"
+                }], 
+            "milestones":  [
+                {
+                    "m1":  "Announced - May 7, 1998",
+                    "m2":  "Groundbreaking - Mar 13, 1999",
+                    "m3":  "Dedicated - Jan 23, 2000"
+                }],
+            "templeclosure":  [
+                {
+                    "c1":  "Sat Oct 1, 2022 - Mon Oct 17, 2022",
+                    "c2":  "Wed Nov 23, 2022 - Thurs Nov 24, 2022",
+                    "c3":  "Fri Dec 23, 2022 - Sat Dec 24, 2022",
+                    "c4":  "Fri Dec 30, 2022 - Sat Dec 31, 2022"
+                }],
+            "picture":  "images/temples/kona_temple.webp"
+        },
+        {
+            "id": "6",
             "name": "Rio de Janeiro Brazil Temple",
             "address":  "Avenida Das Américas, Nº 9005, Rio De Janeiro, Brazil",
             "telephone":  "55.21.3906.4600",
@@ -148,7 +154,7 @@
                     "c2": "Sat Dec 24, 2022 - Sun Dec 25, 2022",
                     "c3":  "Sat Dec 31, 2022 - Sun Jan 1, 2023"
                 }],
-            "picture":  "images/temples/rio_de_janeiro_brazil_temple.jpeg"
+            "picture":  "images/temples/rio_de_janeiro_brazil_temple.webp"
         }
     ]
 }

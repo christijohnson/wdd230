@@ -1,3 +1,5 @@
+// jshint esversion:6
+
 const requesturl = "/wdd230/final_temple/json/temples.json";
 const cards = document.querySelector(".cards");
 
@@ -13,7 +15,7 @@ fetch (requesturl)
 
 function displayTemples(temple) {
     let card = document.createElement("section");
-    let name = document.createElement("h3");
+    let name = document.createElement("h4");
     let picture = document.createElement("img");
     let address = document.createElement("address");
     let phone = document.createElement("p");
@@ -23,29 +25,22 @@ function displayTemples(temple) {
     let milestonesList = document.createElement("ul");
     let templeclosure = document.createElement("p");
     let templeclosureList = document.createElement("ul");
-    let likeBtn = document.createElement("button");
-    likeBtn.classList.add("btn");
-    likeBtn.setAttribute("id","likeBtn")
+    let likeBtn = document.createElement("div");
+    likeBtn.classList.add("btn", "like");
+    likeBtn.setAttribute("id","likeBtn");
+    likeBtn.setAttribute("id",`${temple.id}`);
+    likeBtn.setAttribute("onClick", "togglelike(this.id)");
 
     name.textContent = `${temple.name}`;
     address.textContent = `${temple.address}`;
     phone.textContent = `${temple.telephone}`;
     services.textContent = `Services offered:`;
-//    servicesList.innerHTML = `<li>${temple.services[0].s1}</li><li>${temple.services[0].s2}</li>`;
-//////////
-    let servicesarray = (temple.services[0])
-    servicesList.innerHTML = buildList(servicesarray)
-
-//    var data = JSON.parse(servicesarray);
-
-//    var list = document.createElement("ul");
-//    for (let i of data) { var item = document.createElement("li"); list.appendChild(item); }
-///////////
+    servicesList.innerHTML = buildList(temple.services[0]);
     milestones.textContent = `Milestones:`;
-    milestonesList.innerHTML = `<li>${temple.milestones[0].m1}</li><li>${temple.milestones[0].m2}</li>`;
-    templeclosure.textContent = `Temple Closures`;
-    templeclosureList.innerHTML = `<li>${temple.templeclosure[0].c1}</li><li>${temple.templeclosure[0].c2}</li>`;
-    likeBtn.innerHTML = `<img src="images/temple.svg" height="30px">`;
+    milestonesList.innerHTML = buildList(temple.milestones[0]);
+    templeclosure.textContent = `Temple Closures:`;
+    templeclosureList.innerHTML = buildList(temple.templeclosure[0]);
+    likeBtn.innerHTML = `<button><img src="images/temple.svg" height="35px" alt="like button"></button>`;
     
     picture.setAttribute("src", temple.picture);
     picture.setAttribute("alt", `Image of the ${temple.name}`);
@@ -63,24 +58,33 @@ function displayTemples(temple) {
     card.appendChild(likeBtn);
 
     cards.appendChild(card);
+
+    if (window.localStorage.getItem('liked' + temple.id) == "on") {
+        likeBtn.classList.add('liked');}
+
+//like button
+
+likeBtn.addEventListener('click', () => { 
+    likeBtn.classList.toggle('liked');
+    });
 }
 
+
+// build li from json
 function buildList(data){
-    console.log(data)
-    var html = ""
+    var html = "";
     for(item in data){
         html += '<li>';
-        if(typeof(data[item].sub) === 'object'){ // An array will return 'object'
-            if(isSub){
-                html += data[item].name;
-            } else {
-                html += data[item].name; // Submenu found, but top level list item.
-            }
-            html += buildList(data[item].sub, true); // Submenu found. Calling recursively same method (and wrapping it in a div)
-        } else {
-            html += data[item].id // No submenu
-        }
+            html += data[item];
         html += '</li>';
     }
     return html;
+}
+
+function togglelike(clicked_id){
+    if (window.localStorage.getItem('liked' + clicked_id) == "on") {
+        window.localStorage.setItem('liked' + clicked_id, 'off');
+    } else {
+        window.localStorage.setItem('liked' + clicked_id, 'on');
+    }
 }

@@ -22,11 +22,11 @@
         <h1 class="hidden">Temple Inn and Suites</h1>
         <a href="index.html">
             <picture>
-                <img src="images/Temple Inn & Suites Logo.png" width=100 alt=""> 
+                <img src="images/Temple_Inn_and_Suites_Logo.webp" width=100 alt="Temple_Inn_and_Suites_Logo"> 
             </picture>
         </a>  
-        <h2 class="contact-number">987.654.3210</h2>  
-        <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
+        <p class="contact-number">987.654.3210</p>  
+        <div class="menu-btn"><button id="hamBtn"><span>&#9776;</span><span>X</span></button></div>
     </header>
     <nav id="priNav">
         <a href="index.html">Home</a>
@@ -41,9 +41,9 @@
         </div>   
     </nav>        
     <main>
-        <h3 class="hidden">Alerts</h3>
+        <p class="hidden">Alerts</p>
         <!-- place for weather alerts  -->
-        <h4>Temple Inn and Suites</h4>
+        <h2>Temple Inn and Suites</h2>
         <p>Do you need to reserve a room while visiting the temple?  We offer specialized accommodations
             and services for your stay.  We offer long-term accommodations, wedding receptions, large
             group accommodations, and child care services.  Reserve a place to stay today!</p>
@@ -53,7 +53,7 @@
             <source srcset="images/boise_idaho_temple_large.jpg" media="(max-width: 2100px)">
             <img src="images/boise_idaho_temple_large.jpg" alt="Temple Lobby">
         </picture>
-        <div id="contact-btn"><button class="reservation">Make a Reservation</button></div>
+        <div id="contact-btn"><a href="reservation.html" class="reservation">Make a Reservation</a></div>
         <p>We offer you a place to stay when you are far from home and are enjoying the blessings of
             temple worship.  We have accommodations to help you quickly change and a shuttle to deliver
             you to the front door of the temple.  We can also help you research your family line and look
@@ -83,8 +83,7 @@
             the family will draw you to the temple."</em>   
             <div id="cite">- Elder Gary E. Stevenson</div></div>
         <div class="weather">
-            <h5>Weather Conditions for Logan, Utah</h5>
-            <hr>
+            <h4 id="weather-header">Weather Conditions for Logan, Utah</h4>
             <figure id="display-weather">
                 <img id="weather-icon" src="images/placeholder_400x300.webp" alt="placeholder">
                 <div class="weather-stats"><p id="temperature"><span id="current-temp"></span> &deg;F</p>
@@ -92,7 +91,7 @@
                 <figcaption>
                 </figcaption>
             </figure>
-            <div class="forecast">
+            <div id="forecast">
             <div>
                 <figure>
                     <p class="hidden">Tomorrow</p>
@@ -116,26 +115,22 @@
                 </figure></div>
             </div>
         </div>
-        <div class="social">
-            <a href="facebook.com"><img src="images/social/facebook.png" alt="facebook logo" target="_blank"></a>
-            <a href="instagram.com"><img src="images/social/instagram.png" alt="instagram logo" target="_blank"></a>
-            <a href="pinterest.com"><img src="images/social/pinterest.png" alt="pinterest logo" target="_blank"></a>
-            <a href="twitter.com"><img src="images/social/twitter3.webp" alt="twitter logo" target="_blank"></a>
-        </div>
-        
     </main>
-    <footer>
-        <div>
-            <!--href-->
-            <img src="images/map.png" alt="map of headquarters">
-            <address>4800 Montgomery Ln #300 Bethesda, MD 20814</address>
-            <p>&copy;<span id="currentyear"></span> Temple Inn and Suites</p>
-            <p>Christi Johnson-WDD230 Project</p> 
+    <footer class="position">
+        <div class="resource">
+            <a href="https://goo.gl/maps/bBDFJHbRBXWHHr4i9" target="_blank"><img src="images/map.webp" alt="map of headquarters" loading="lazy"></a></div>
+            <div class="location"><p>Temple Inn & Suites Headquarters</p>
+                <address>4800 Montgomery Ln #300 Bethesda, MD 20814</address>
+            <a href="contact.html">Contact Us!</a></div>  
+            <div class="detail"><p>&copy;<span id="currentyear"></span> Temple Inn and Suites | Christi Johnson | WDD230 Final Project</p> 
             <p>Last Updated: <span id="updated"></span></p>
-            <p>Source information found <a href="resources.html"></a></p>
-            <!-- sources link and contact details and contact us link  -->
-            
-        </div>
+            <p>Source information found <a href="resources.html">here.</a></p></div>  
+            <div class="social">
+                <a href="facebook.com" target="_blank"><img src="images/social/facebook.webp" alt="facebook logo"></a>
+                <a href="instagram.com" target="_blank"><img src="images/social/instagram.webp" alt="instagram logo"></a>
+                <a href="pinterest.com" target="_blank"><img src="images/social/pinterest.webp" alt="pinterest logo"></a>
+                <a href="twitter.com" target="_blank"><img src="images/social/twitter.webp" alt="twitter logo"></a>
+            </div> 
     </footer>
 
     <script src="js/weather.js"></script>

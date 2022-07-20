@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specialized Services available at Temple Inn and Suites - 987-654-3210</title>
-    <meta name="description" content="Specialized services available at Temple Inn and Suites including specialized hotel accommodations near temples of The Church of Jesus Christ of Latter-day Saints around the world.">
+    <title>Contact Temple Inn and Suites - 987-654-3210</title>
+    <meta name="description" content="Contact us at Temple Inn and Suites, we offer specialized hotel accommodations near temples of The Church of Jesus Christ of Latter-day Saints around the world.">
     <link rel="shortcut icon" href="Favicon.ico">
-    <!--<link rel="manifest" href="/site.webmanifest">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@803&family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
@@ -36,36 +35,20 @@
                 <a class="sublink" href="missionary-services.html">Missionary Services</a>
             </div>
         </div>   
-    </nav>    
-    <main>
-        <h2>Services Available at Temple Inn and Suites</h2>
-        <div class="services">
-            <h3 class="hidden">Amenities</h3>
-                <h4>Free Amenities</h4>
-            <ul>   <!--   adding icons for amenities or other pictures  -->
-                <li>Breakfast</li>
-                <li>Exercise/Workout Room</li>
-                <li>WiFi highspeed internet and Smart TVs</li>
-                <li>Parking</li>
-                <li>Temple shuttle</li>
-                <li>Onsite Family History consultants</li>
-                <li>Family ordinance card service</li>
-                <li>Indoor pool</li>
-                <li>Family-friendly atmosphere</li>
-                <li>Indoor and outdoor gathering areas</li>
-            </ul></div>
-            <img src="images/pool.jpeg" alt="picture of the hotel pool">
-            <div class="services">
-                <h4>Special Services</h4>
-                <ul>
-                    <li>Temple history themed reception area and sitting area</li>
-                    <li>Family search center to support your search and ordinance work</li>
-                    <li>Wedding reception hall with kitchen access for food preparation and serving</li>
-                    <li>Playroom and low-cost, short-term babysitting services for the children of patrons</li>
-                    <li>Long-term stay accommodations with kitchenette suites for full-time temple missionaries</li>
-                    <li>Access to changing rooms and bathroom facilities for temple patrons</li>
-                </ul>   
-        </div>
+    </nav>        
+    <main >
+        <form id="contact-form" method="get" action="contact-confirm.html">
+            <fieldset class="contact">
+                <legend>Contact Information</legend>
+                <label class="field">First Name*<input type="text" id="fname" name="fname" required></label>
+                <label class="field">Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label class="field">Email*<input type="email" id="email" name="email" required></label>
+                <label class="field">Phone Number*<input type="tel" id="phone" pattern="[0-9]{10,11}" name="phone" required></label>
+                <label>How can we help you?
+                <textarea name="message" id="message" rows="10" cols="30"></textarea></label>
+                <input type="submit" value="Send Your Message" name="button" class="submitBtn">
+            </fieldset>
+        </form>  
     </main>
     <footer class="position">
         <div class="resource">
@@ -83,6 +66,7 @@
                 <a href="twitter.com" target="_blank"><img src="images/social/twitter.webp" alt="twitter logo"></a>
             </div> 
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="js/menu.js"></script>    
+    
 </body>
 </html>

@@ -1,4 +1,29 @@
 @media only screen and (min-width: 900px) {
-    
+
+ /*  weather  */
+ .weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .weather h4 {
+      grid-column: 1/3;
+  }
+
+  #forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    background-color: var(--grey);
+    margin: 0 -12px;
+  }
+  
+  #forecast div {
+    border:  none;
+    border-left: 1px solid var(--primary-blue);
+    background-color: var(--grey);
+    margin: 0 -2px;
+    text-align: center;
+    padding-top: 10px;
+  }
 }
-/*  900px   */
