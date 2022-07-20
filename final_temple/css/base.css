@@ -306,6 +306,29 @@ p {
   padding-bottom: 15px;
 }
 
+/*  banner   */
+#alert-weather {
+  background-color: var(--grey);
+  color: black;
+  text-align: center;
+}
+
+#alert-weather p {
+  margin: 0;
+  padding: .5rem;
+}
+
+#notify-weather button {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+
+.remove-notify {
+  display: none;
+}
+
 /* temple cards */
 .cards {
   background-color: var(--grey);
@@ -379,7 +402,7 @@ form label.select input {
   background-color: var(--grey);
 }
 
-form label.spinner input {
+form label.number input {
   display: block;
   font-size: 1rem;
   border: 1px solid black;

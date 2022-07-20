@@ -11,16 +11,17 @@ const captionDesc2 = document.querySelector('#figcaption2');
 const day3Temp = document.querySelector('#day3-temp');
 const weatherIcon3 = document.querySelector('#weather-icon3');
 const captionDesc3 = document.querySelector('#figcaption3');
+const weatheralert = document.querySelector('#alert-weather');
 
-let wchill = 0
-const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.7334653&lon=-111.8277686&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
+//const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.7334653&lon=-111.8277686&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.093319&lon=-113.5758665&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
 
 async function apiFetch(apiURL) {
 		try {
 			const response = await fetch(url);
 			if (response.ok) {
 				const data = await response.json();
-				//	console.log(data); // this is for testing the call
+					console.log(data); // this is for testing the call
 				displayResults(data);
 			} else {
 					throw Error(await response.text());
@@ -44,7 +45,7 @@ async function apiFetch(apiURL) {
 		weatherIcon.setAttribute('src', iconsrc);
 		weatherIcon.setAttribute('alt', desc);
 		captionDesc.textContent = titleCase(desc);
-
+		
 		const tempday1 = weatherData.daily[1].temp.max;
 		const tempday2 = weatherData.daily[2].temp.max;
 		const tempday3 = weatherData.daily[3].temp.max;
@@ -70,6 +71,26 @@ async function apiFetch(apiURL) {
 		weatherIcon3.setAttribute('src', iconsrc3);
 		weatherIcon3.setAttribute('alt', desc3);
 		captionDesc3.textContent = titleCase(desc3);
+		console.log(`${weatherData.alerts.event}`);
+
+		if (alerts !== undefined) {
+			const delAlert = document.createElement("button");
+			weatheralert.textContent = `${weatherData.alerts.event}`;
+			weatherNotify.appendChild(deAlert);
+			delAlert.addEventListener("click", () => {weatherNotify.classList.add("remove-notify")}, true)
+		}
+	
+		if (alerts > 0) {
+			alerts.forEach(displayAlerts);
+		}
+	
+		function displayAlerts(alerts) {
+			let event = document.createElement("p");
+			let alert = alerts.event;
+			event.innerText = alert;
+			weatherAlert.appendChild(event);
+		}
+	
 	}
 
 // Title Case Conversion
@@ -79,3 +100,9 @@ async function apiFetch(apiURL) {
 			return (word.charAt(0).toUpperCase() + word.slice(1));
 		}).join(' ');
 	}
+
+	// alerts
+
+	//const alerts = jsObject["alerts"];
+
+	
