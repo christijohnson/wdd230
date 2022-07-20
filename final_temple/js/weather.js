@@ -14,7 +14,7 @@ const captionDesc3 = document.querySelector('#figcaption3');
 const weatheralert = document.querySelector('#alert-weather');
 
 //const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.7334653&lon=-111.8277686&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
-const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.093319&lon=-113.5758665&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.3651403&lon=-81.7985659&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
 
 async function apiFetch(apiURL) {
 		try {
@@ -71,7 +71,7 @@ async function apiFetch(apiURL) {
 		weatherIcon3.setAttribute('src', iconsrc3);
 		weatherIcon3.setAttribute('alt', desc3);
 		captionDesc3.textContent = titleCase(desc3);
-		console.log(`${weatherData.alerts.event}`);
+		console.log(`${weatherData.alerts[0].event}`);
 
 		if (alerts !== undefined) {
 			const delAlert = document.createElement("button");
