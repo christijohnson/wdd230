@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div id="notify-weather">
-        <div id="alert-weather"></div>
-        <button>X</button>
-    </div>
     <header>
         <h1 class="hidden">Temple Inn and Suites</h1>
         <a href="index.html">
@@ -41,8 +37,11 @@
         </div>   
     </nav>        
     <main>
-        <p class="hidden">Alerts</p>
-        <!-- place for weather alerts  -->
+        <div class="hidden" id="notify-weather">
+            <div id="alert-weather"></div>
+            <button onclick="closealert()">X</button>
+            <!-- place for weather alerts  -->
+        </div>
         <h2>Temple Inn and Suites</h2>
         <p>Do you need to reserve a room while visiting the temple?  We offer specialized accommodations
             and services for your stay.  We offer long-term accommodations, wedding receptions, large

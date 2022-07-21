@@ -73,24 +73,11 @@ async function apiFetch(apiURL) {
 		captionDesc3.textContent = titleCase(desc3);
 		console.log(`${weatherData.alerts[0].event}`);
 
-		if (alerts !== undefined) {
-			const delAlert = document.createElement("button");
-			weatheralert.textContent = `${weatherData.alerts.event}`;
-			weatherNotify.appendChild(deAlert);
-			delAlert.addEventListener("click", () => {weatherNotify.classList.add("remove-notify")}, true)
+		if (weatherData.alerts[0].description !== undefined) {
+//			const delAlert = document.createElement("button");
+			weatheralert.innerHTML = `${weatherData.alerts[0].description}`;
+			document.getElementById("notify-weather").classList.remove("hidden");
 		}
-	
-		if (alerts > 0) {
-			alerts.forEach(displayAlerts);
-		}
-	
-		function displayAlerts(alerts) {
-			let event = document.createElement("p");
-			let alert = alerts.event;
-			event.innerText = alert;
-			weatherAlert.appendChild(event);
-		}
-	
 	}
 
 // Title Case Conversion
@@ -101,8 +88,32 @@ async function apiFetch(apiURL) {
 		}).join(' ');
 	}
 
-	// alerts
+	function closealert(){
+		document.getElementById("notify-weather").classList.add("hidden");
+	}
 
-	//const alerts = jsObject["alerts"];
-
+//	const w = document.getElementById("notify-weather");
+//	w.onclick = closealert()
 	
+
+
+/*
+	if (alerts !== undefined) {
+		const delAlert = document.createElement("button");
+		weatheralert.textContent = `${weatherData.alerts.event}`;
+		weatherNotify.appendChild(deAlert);
+		delAlert.addEventListener("click", () => {weatherNotify.classList.add("remove-notify")}, true)
+	}
+
+	if (alerts > 0) {
+		alerts.forEach(displayAlerts);
+	}
+
+	function displayAlerts(alerts) {
+		let event = document.createElement("p");
+		let alert = alerts.event;
+		event.innerText = alert;
+		weatherAlert.appendChild(event);
+	}
+
+*/

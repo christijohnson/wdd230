@@ -43,8 +43,8 @@
                 <h3 class="hidden">Information</h3>
                     <h4>Reservation Information</h4>
                 <fieldset>
-                    <label class="field" for="location">City Location*
-                    <input list="location" required></label>
+                    <label class="field" for="location-choice">City Location*
+                    <input list="location" id="location-choice" name="location-choice" required></label>
                     <datalist id="location">
                         <option value="Logan, UT"></option>
                         <option value="San Diego, CA"></option>
@@ -53,24 +53,26 @@
                         <option value="Cedar City, UT"></option>
                         <option value="Rio de Janeiro, Brazil"></option>
                     </datalist>
-                    <label class="select" for="dates">Dates*
-                    <div id="dates"><input type="date" id="check-in" name="check-in" required>&nbsp;&nbsp;
-                    <input type="date" id="check-out" name="check-out" required></div></label>
-                    <label class="select" for="number-rooms">Number of Rooms*
+                    <span id="dates">
+                    <label class="select">Arrival Date*
+                    <input type="date" name="check-in" required></label>
+                    <label class="select">Departure Date*
+                    <input type="date" name="check-out" required></label></span>
+                    <label class="select">Number of Rooms*
                     <input type="number" min="1" max="10" step="1" required></label>
-                    <label class="select" for="number-adults">Number of Adults per Room
+                    <label class="select">Number of Adults per Room
                     <input type="number" min="1" max="5" step="1"></label>                    
-                    <label class="select" for="number-children">Number of Children per Room
+                    <label class="select">Number of Children per Room
                     <input type="number" min="0" max="5" step="1"></label>
-                    <label for="room-type">Room Type*</label>
-                    <label class="sbs" for="king">
-                    <input type="radio" id="king" name="room-type" value="1bed-king" required>1 King bed</label>
-                    <label class="sbs" for="queen">
-                    <input type="radio" id="queen" name="room-type" value="2bed-queen" required>2 Queen beds</label>
-                    <label class="sbs" for="queen-kitchen">
-                    <input type="radio" id="queen-kitchen" name="room-type" value="1queen-kitchen" required>1 Queen bed with kitchenette</label>
-                    <label class="sbs" for="twin-kitchen">
-                    <input type="radio" id="twin-kitchen" name="room-type" value="2twin-kitchen" required>2 Twin beds with kitchenette</label>
+                    <label>Room Type*</label>
+                    <label class="sbs">
+                    <input type="radio" name="room-type" value="1bed-king" required>1 King bed</label>
+                    <label class="sbs">
+                    <input type="radio" name="room-type" value="2bed-queen" required>2 Queen beds</label>
+                    <label class="sbs">
+                    <input type="radio" name="room-type" value="1queen-kitchen" required>1 Queen bed with kitchenette</label>
+                    <label class="sbs">
+                    <input type="radio" name="room-type" value="2twin-kitchen" required>2 Twin beds with kitchenette</label>
                 </fieldset>
                 <h4>Guest Information</h4>
                 <fieldset>
