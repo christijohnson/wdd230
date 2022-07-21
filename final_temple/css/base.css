@@ -13,7 +13,7 @@
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 body {
@@ -32,14 +32,6 @@ h2 {
   text-align: center;
 }
 
-h4 {
-  font-family: 'Alegreya', serif;
-  font-size: 1.75rem;
-  background-color: var(--primary-brown);
-  color: white;
-  text-align: center;
-}
-
 h3 {
   font-family: 'Alegreya', serif;  
   background-color: var(--secondary-blue);
@@ -49,11 +41,12 @@ h3 {
   margin: 5px 0;
 }
 
-#weather-header {
+h4 {
   font-family: 'Alegreya', serif;
-  font-size: 1.5rem;
-  background-color: transparent;
-  color: black;
+  font-size: 1.75rem;
+  background-color: var(--primary-brown);
+  color: white;
+  text-align: center;
 }
 
 img {
@@ -88,19 +81,17 @@ header img {
   padding: .5rem;
 }
 
-.menu-btn {
-  text-align: start;
-}
-
 /*   navigation   */
 nav {
-display: flex;
-flex-direction: column;
-margin-bottom: 1rem;
-min-width: 32.5em;
-text-align: center;
-background-color: var(--primary-brown);
-display: none;
+  margin-bottom: 1rem;
+  min-width: 32.5em;
+  text-align: center;
+  background-color: var(--primary-brown);
+}
+
+nav a:hover {
+  background-color: var(--secondary-blue);
+  color: black;
 }
 
 nav.open {
@@ -125,48 +116,8 @@ nav a {
   color: black;
 }
 
-nav > .groupmenu {
-display: grid;
-position: relative;
-}
-
-nav > .groupmenu > .submenu {
-position: absolute;
-display: none;
-top: 100%;
-}
-
-nav > .groupmenu .sublink {
-background: var(--primary-brown);
-color: white;
-border: none;
-position: static;
-}
-
-nav > a,
-nav > .groupmenu > a:first-child {
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-right: none;
-font-weight: 700;
-}
-nav > .groupmenu:last-child > a.level-1 {
-border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-nav > a:hover,
-nav > .groupmenu > a:first-child:hover {
-background-color: var(--secondary-blue);
-color: black;
-}
-nav > .groupmenu:hover > .submenu {
-display: grid;
-z-index: 1;
-width: 100%;
-}
-
-nav .sublink:hover {
-background-color: var(--secondary-blue);
-color: #000;
-font-weight: 700;
+.menu-btn {
+  text-align: start;
 }
 
 #hamBtn {
@@ -221,6 +172,11 @@ p {
   text-decoration: none;
 }
 
+.reservation a:link {
+  text-decoration: none;
+  color: white;
+}
+
 #quote {
   margin: 0 2.5rem;
   padding: 5px;
@@ -231,7 +187,7 @@ p {
   text-align: right;
 }
 
-/*    weather boxes    */
+/*  weather boxes  */
 .weather img {
     width: 100px;
     border: none;
@@ -252,6 +208,10 @@ p {
 }
 
 #weather-header {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: black;
   border-bottom: 1px solid var(--primary-blue);
 }
 
@@ -443,14 +403,6 @@ form section {
   text-align: center;
 }
 
-form label.top input:required {
-  border-left: red solid 8px;
-}
-
-form label.top input:required:valid {
-  border-left:rgba(118, 0, 164,0.5) solid 3px;
-}
-
 form textarea {
   width: 100%;
   max-width: 45rem;
@@ -512,12 +464,12 @@ footer {
   margin: 20px;
 }
 
-.location a:link, .location a:visited {
+footer a:link, footer a:visited {
   color: black;
 }
 
-.detail a:link, .detail a:visited {
-  color: black;
+main a:link, main a:visited {
+  color: white;
 }
 
 .resource p {

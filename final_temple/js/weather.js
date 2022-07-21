@@ -13,15 +13,14 @@ const weatherIcon3 = document.querySelector('#weather-icon3');
 const captionDesc3 = document.querySelector('#figcaption3');
 const weatheralert = document.querySelector('#alert-weather');
 
-//const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.7334653&lon=-111.8277686&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
-const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.3651403&lon=-81.7985659&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.7334653&lon=-111.8277686&exclude=minutely,hourly&units=imperial&appid=7bcb523faeae2a7693622e17ed4cfcf2';
 
 async function apiFetch(apiURL) {
 		try {
 			const response = await fetch(url);
 			if (response.ok) {
 				const data = await response.json();
-					console.log(data); // this is for testing the call
+//					console.log(data); // this is for testing the call
 				displayResults(data);
 			} else {
 					throw Error(await response.text());
@@ -74,9 +73,10 @@ async function apiFetch(apiURL) {
 		console.log(`${weatherData.alerts[0].event}`);
 
 		if (weatherData.alerts[0].description !== undefined) {
-//			const delAlert = document.createElement("button");
 			weatheralert.innerHTML = `${weatherData.alerts[0].description}`;
 			document.getElementById("notify-weather").classList.remove("hidden");
+			document.getElementById("alert-weather").classList.remove("hidden");
+			document.getElementById("close-weather").classList.remove("hidden");
 		}
 	}
 
@@ -90,30 +90,6 @@ async function apiFetch(apiURL) {
 
 	function closealert(){
 		document.getElementById("notify-weather").classList.add("hidden");
+		document.getElementById("alert-weather").classList.add("hidden");
+		document.getElementById("close-weather").classList.add("hidden");
 	}
-
-//	const w = document.getElementById("notify-weather");
-//	w.onclick = closealert()
-	
-
-
-/*
-	if (alerts !== undefined) {
-		const delAlert = document.createElement("button");
-		weatheralert.textContent = `${weatherData.alerts.event}`;
-		weatherNotify.appendChild(deAlert);
-		delAlert.addEventListener("click", () => {weatherNotify.classList.add("remove-notify")}, true)
-	}
-
-	if (alerts > 0) {
-		alerts.forEach(displayAlerts);
-	}
-
-	function displayAlerts(alerts) {
-		let event = document.createElement("p");
-		let alert = alerts.event;
-		event.innerText = alert;
-		weatherAlert.appendChild(event);
-	}
-
-*/

@@ -25,21 +25,17 @@
         <div class="menu-btn"><button id="hamBtn"><span>&#9776;</span><span>X</span></button></div>
     </header>
     <nav id="priNav">
-        <a href="index.html">Home</a>
-        <a href="temple.html">Temples</a>
-        <a href="reservation.html">Reservations</a>
-        <div class="groupmenu">
-            <a class="level-menu" href="service.html">Services</a>
-            <div class="submenu">
-                <a class="sublink" href="reception-services.html">Reception Services</a>
-                <a class="sublink" href="missionary-services.html">Missionary Services</a>
-            </div>
-        </div>   
-    </nav>        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="service.html">Services</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="hidden" id="notify-weather">
-            <div id="alert-weather"></div>
-            <button onclick="closealert()">X</button>
+            <div class="hidden" id="alert-weather"></div>
+            <button class="hidden" id="close-weather" onclick="closealert()">X</button>
             <!-- place for weather alerts  -->
         </div>
         <h2>Temple Inn and Suites</h2>
@@ -62,7 +58,7 @@
             are welcome as we have rooms with kitchenettes available.  Visit your favorite temple and come
             and stay with us!</p>
         <h3>Logan Utah Temple</h3>
-        <img src="images/temple-logan-utah-main.jpg" width="500" alt="Logan Temple">
+        <img src="images/temple-logan-utah-main.jpg" alt="Logan Temple">
         <p>The Logan Utah Temple stands prominently on an elevated terrace - visible for miles
             throughout Utah's Cache Valley.  Occupying an entire city block, the site features
             charming gardens and an oval reflecting pool on the east side and a huge grassy hill
