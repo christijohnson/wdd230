@@ -83,6 +83,7 @@ header img {
 
 /*   navigation   */
 nav {
+  display: none;
   margin-bottom: 1rem;
   min-width: 32.5em;
   text-align: center;
@@ -95,7 +96,7 @@ nav a:hover {
 }
 
 nav.open {
-  display: flex;
+  display: block;
 }
 
 nav a {
@@ -420,6 +421,10 @@ form textarea {
 }
 
 /*  services  */
+.services {
+  border-bottom: 2px solid var(--primary-brown);
+  margin: 20px 0;
+}
 .services ul li {
   margin: 5px;
   padding: 2px 5px;
@@ -442,6 +447,7 @@ footer {
   padding: 10px;
   background-color: var(--primary-blue);
   color: black;
+  margin-top: 20px;
 }
 
 .social {
@@ -464,7 +470,7 @@ footer {
   margin: 20px;
 }
 
-footer a:link, footer a:visited {
+footer a:link, footer a:visited, .resource a:link, .resource a:visited {
   color: black;
 }
 
@@ -478,4 +484,8 @@ main a:link, main a:visited {
 
 .resource img {
   max-width: 600px;
+}
+
+footer address {
+  margin-bottom: 15px;
 }

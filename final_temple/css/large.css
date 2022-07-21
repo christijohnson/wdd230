@@ -10,7 +10,7 @@
     justify-content: space-evenly;
   }
 
-  ul {
+  nav ul {
     list-style-type: none;
   }
 
@@ -29,11 +29,8 @@
   }
 
   #forecast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     border: none;
-    background-color: var(--grey);
-    margin: 0 -12px;
+    margin: 0;
   }
   
   #forecast div {
@@ -44,4 +41,12 @@
     text-align: center;
     padding-top: 10px;
   }
+
+  /*  reservation  */
+  #form {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
 }

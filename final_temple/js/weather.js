@@ -20,13 +20,12 @@ async function apiFetch(apiURL) {
 			const response = await fetch(url);
 			if (response.ok) {
 				const data = await response.json();
-//					console.log(data); // this is for testing the call
 				displayResults(data);
 			} else {
 					throw Error(await response.text());
 			}
 		} catch (error) {
-//				console.log(error);
+				console.log(error);
 		}
 	}
 
@@ -80,16 +79,16 @@ async function apiFetch(apiURL) {
 		}
 	}
 
+	function closealert(){
+		document.getElementById("notify-weather").classList.add("hidden");
+		document.getElementById("alert-weather").classList.add("hidden");
+		document.getElementById("close-weather").classList.add("hidden");
+	}
+
 // Title Case Conversion
 
 	function titleCase(str) {
 		return str.toLowerCase().split(' ').map(function(word) {
 			return (word.charAt(0).toUpperCase() + word.slice(1));
 		}).join(' ');
-	}
-
-	function closealert(){
-		document.getElementById("notify-weather").classList.add("hidden");
-		document.getElementById("alert-weather").classList.add("hidden");
-		document.getElementById("close-weather").classList.add("hidden");
 	}

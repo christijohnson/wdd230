@@ -36,10 +36,10 @@
         <form id="contact-form" method="get" action="contact-confirm.html">
             <fieldset class="contact">
                 <legend>Contact Information</legend>
-                <label class="field">First Name*<input type="text" id="fname" name="fname" required></label>
-                <label class="field">Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label class="field">First Name*<input type="text" id="fname" name="fname" required pattern="[A-za-z ]{2,}" placeholder="John"></label>
+                <label class="field">Last Name*<input type="text" id="lname" name="lname" required pattern="[A-za-z ]{2,}" placeholder="Smith"></label>
                 <label class="field">Email*<input type="email" id="email" name="email" required></label>
-                <label class="field">Phone Number*<input type="tel" id="phone" pattern="[0-9]{10,11}" name="phone" required></label>
+                <label class="field">Phone Number*<input type="tel" id="phone" pattern="[0-9 -]{10,11}" name="phone" required placeholder="555-555-5555"></label>
                 <label>How can we help you?
                 <textarea name="message" id="message" rows="10" cols="30"></textarea></label>
                 <input type="submit" value="Send Your Message" name="button" class="submitBtn">
