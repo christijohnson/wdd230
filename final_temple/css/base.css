@@ -167,6 +167,7 @@ p {
 #contact-btn {
   text-align: center;
   margin: 10px;
+  margin-top: 25px;
 }
 
 #contact-btn a:link {
